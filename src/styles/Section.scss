@@ -1,9 +1,9 @@
 @import 'Variables.scss';
 
 section {
-  border: $devBorder solid blue;
+  border: $devBorder solid lime;
   padding-top: 10%;
-  height: 90%;
+  height: 100%;
 
 
   .introduction {
@@ -23,5 +23,6 @@ section {
 
 main {
   flex: 1;
+  height: 90%;
 }
 

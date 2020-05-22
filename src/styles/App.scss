@@ -1,0 +1,27 @@
+@import 'Variables.scss';
+
+* {
+	box-sizing: border-box;
+  margin: 0px;
+	font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.App {
+  height: 100vh;
+}
+
+.holdingText {
+  text-transform: uppercase;
+  letter-spacing: 1.5pt;
+}
+
+
+
+
+
+

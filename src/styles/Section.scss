@@ -1,0 +1,27 @@
+@import 'Variables.scss';
+
+section {
+  border: $devBorder solid blue;
+  padding-top: 10%;
+  height: 90%;
+
+
+  .introduction {
+    height: 25%;
+    font-size: 20pt;
+    display: flex;
+    margin: 30pt;
+  }
+
+  .heroImage {
+    background: url('../images/drilling-rig.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75%;
+  }
+}
+
+main {
+  flex: 1;
+}
+

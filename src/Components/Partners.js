@@ -49,10 +49,10 @@ class Partners extends Component {
 
    
     return(
-      <section className='Partners'>
+      <div className='Partners'>
         Partners
         {this.state.text1}
-      </section>
+      </div>
     )
   }
 }

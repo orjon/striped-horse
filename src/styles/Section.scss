@@ -2,27 +2,99 @@
 
 section {
   border: $devBorder solid lime;
-  padding-top: 10%;
-  height: 100%;
+  padding-top: $navHeight;
+  width :100%;
+  height: calc(100%-$navHeight100);
 
 
   .introduction {
-    height: 25%;
-    font-size: 20pt;
-    display: flex;
-    margin: 30pt;
+    // align-items: flex-start;
+    color: darkRed;
+    height: 100%;
+    font-size: 30pt;
+    border: $devBorder solid red;
+
+
+  &.overlayWhite {
+    color: white;
+    text-shadow: 0px 0px $textShadowBlur $textShadowColor;
+  }
+    
+    strong {
+      width: 70%;
+      // padding: 5% 10% 5% 10%;
+      font-size: 50pt;
+      // text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 10px;
+      border: $devBorder solid grey;
+    }
+    p {
+      width: 70%;
+      text-align: center;
+      border: $devBorder solid grey;
+    }
   }
 
   .heroImage {
-    background: url('../images/drilling-rig.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%;
+    background-position: center;
+  }
+
+  .image01{ 
+    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/Services01.jpg');
+    // background: url('../images/Services01.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image02{ 
+    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/OilRig.jpg');
+    // background: url('../images/OilRig.jpg');
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .Home {
+    background-color: rgb(247, 205, 255);
+    width: 100%;
+  }
+
+
+  .Services {
+    background-color: lightblue;
+    background-color: white;
+    width: 100%;
+    height: 150%;
+
+  }
+
+  .Partners {
+    background-color: rgb(251, 255, 190);
+    width: 100%;
+  }
+
+  .Ethics {
+    background-color: lightblue;
+    width: 100%;
+    height: 150%;
+  }
+  .About {
+    background-color: pink;
+    width: 100%;
+  }
+
+  .Contact {
+    background-color: lightgreen;
+    width: 100%;
   }
 }
 
-main {
-  flex: 1;
-  height: 90%;
-}
+
 

@@ -1,26 +1,36 @@
 @import 'Variables.scss';
 
-$navBorder: 1px solid rgb(0, 129, 199);
+$navBorder: 0px solid rgb(0, 129, 199);
+
 
 .Nav {
   position: fixed;
+  top: 0;
   display: flex;
   flex-direction: row;
   padding: 10px;
-  background-color: lightgrey;
+  background-color: rgba(211, 211, 211, 0.5);
+  background-color: white;
   border: $devBorder solid blue;
-  height: 10%;
+  height: $navHeight;
+  border-bottom: 1px solid black;
 
   .Logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: $devBorder solid grey;
+    // border: $devBorder solid grey;
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    .LogoImage {
+      height: 40px;
+      margin-right: 10px;
+    }
   }
   
 
-  .navButtons {
+  .navItems {
     padding: 5px;
     flex: 1;
     display: flex;
@@ -29,27 +39,19 @@ $navBorder: 1px solid rgb(0, 129, 199);
     align-items: center;
   }
 
-
-  .navButton {
+  .navItem {
+    color: $colorNavItem;
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    font-size: 10pt;
     margin: 5px;
     // border: $navBorder;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 100px;
-    color: white;
     text-decoration: none;
-    background-color: rgb(0, 129, 199);
+
 
     &.selected {
-      // border: $navBorder;
-      // color:black;
-      background-color: lightgrey;
-      background-color: rgba(0, 129, 199, 0.571);
-
+      color: $colorNavItemSelected;
+      // background-color: lightgrey;
     }
     
   }

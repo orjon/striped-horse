@@ -1,23 +1,23 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Nav from './Nav';
-import Home from './Home';
-import About from './About';
-import Services from './Services';
-import Partners from './Partners';
-import Contact from './Contact';
-import Ethics from './Ethics';
+import Nav from './Components/Nav';
+import Home from './Components/Home';
+import About from './Components/About';
+import Services from './Components/Services';
+import Partners from './Components/Partners';
+import Contact from './Components/Contact';
+import Ethics from './Components/Ethics';
 import './styles/App.scss';
 
 
 function App() {
   return (
-    <div className='App column'>
+    <div className='App'>
       {/* <p className='holdingText'>Striped Horse Resources ltd.</p> */}
       <Nav />
-      <main className='w100'>
+      <section className='flexColumn w100'>
         <Switch>
-        <Route
+          <Route
               exact
               path='/'
               render={(routeProps) => (
@@ -67,7 +67,7 @@ function App() {
               )}
             />
         </Switch>
-      </main>
+      </section>
 
     </div>
   );

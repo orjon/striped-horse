@@ -10,7 +10,13 @@ import Ethics from './Components/Ethics';
 import './styles/App.scss';
 
 
+
+
+
+
 function App() {
+
+
   return (
     <div className='App'>
       {/* <p className='holdingText'>Striped Horse Resources ltd.</p> */}
@@ -72,6 +78,8 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
 

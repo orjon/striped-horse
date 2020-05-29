@@ -7,45 +7,76 @@ section {
   height: calc(100%-$navHeight100);
 
 
-  .introduction {
+
+
+  .textBanner {
     // align-items: flex-start;
-    color: darkRed;
-    height: 100%;
+    color: $colorBannerText;
     font-size: 30pt;
     border: $devBorder solid red;
-
-
-  &.overlayWhite {
-    color: white;
-    text-shadow: 0px 0px $textShadowBlur $textShadowColor;
+    text-align: center;
   }
+
+  .textBannerSub {
+    font-size: 30pt;
+  }
+
+  .textBlock {
+    align-items: flex-start;
+    color: $colorBannerText;
     
+    border: $devBorder solid red;
+  }
+
+  .textBanner, .textBlock {
+    &.overlayWhite {
+      color: white;
+      text-shadow: 0px 0px $textShadowBlur $textShadowColor;
+    }
+  }
+
+      
+
+
+  .PartnerBlock {
+    padding: 25px;
+    flex-basis: 25%;
+    min-width: 250px;
+
+    @media only screen and (max-width: 580px) {
+      flex-basis: 100%;
+    }
+  }
+
+  .PartnerImage {
+    $partnerImageSize: 125px;
+    border: $devBorder solid purple;
+    padding: 10px;
+    max-width: $partnerImageSize;
+    max-height: $partnerImageSize;
+    margin-bottom: 5px;
+  }
+  .PartnerText {
+    border: $devBorder solid fuchsia;
+    flex: 1;
     strong {
-      width: 70%;
-      // padding: 5% 10% 5% 10%;
-      font-size: 50pt;
-      // text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 10px;
-      border: $devBorder solid grey;
+      text-transform: capitalize;
+      margin-bottom: 5px;
     }
     p {
-      width: 70%;
-      text-align: center;
-      border: $devBorder solid grey;
+      text-align: left;
     }
   }
 
+
   .heroImage {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
   }
 
   .image01{ 
     background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/Services01.jpg');
-    // background: url('../images/Services01.jpg');
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,47 +84,52 @@ section {
 
   .image02{ 
     background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/OilRig.jpg');
-    // background: url('../images/OilRig.jpg');
-    height: 75vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-
-  .Home {
-    background-color: rgb(247, 205, 255);
-    width: 100%;
+  .image03{ 
+    background: url('../images/OilRig.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-
-  .Services {
-    background-color: lightblue;
-    background-color: white;
-    width: 100%;
-    height: 150%;
-
+  .image04{ 
+    align-content: stretch;
+    background: url('../images/OilRig2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-  .Partners {
-    background-color: rgb(251, 255, 190);
-    width: 100%;
+  .image-oilrig3{ 
+    align-content: stretch;
+    background: url('../images/OilRig3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-  .Ethics {
-    background-color: lightblue;
-    width: 100%;
-    height: 150%;
-  }
-  .About {
-    background-color: pink;
-    width: 100%;
+  .image-3d{ 
+    align-content: stretch;
+    background: url('../images/3dsml.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: $devBorder solid dodgerblue;
   }
 
-  .Contact {
-    background-color: lightgreen;
-    width: 100%;
+  .image-pipes{ 
+    align-content: stretch;
+    background: url('../images/pipes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: $devBorder solid dodgerblue;
   }
+
 }
 
 

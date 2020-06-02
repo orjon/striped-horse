@@ -2,20 +2,36 @@ import React, { Component } from 'react';
 import '../styles/Section.scss';
 import SectionTitle from './SectionTitle';
 import SectionSubTitle from './SectionSubTitle';
-import { default as IconNavUp} from '@material-ui/icons/KeyboardArrowUp';
+import NavToTop from './NavToTop';
+import SlideShow from './SlideShow';
+
 
 class Services extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        slidesA: ['A01','A02','A03']
+    };
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render(){
+
+    let { slidesA } = this.state
+
     return(
       <div className='Services'>
 
         <div className='image04 h80 flexColumn spread'>
           <div className='overlayTop'>
             <SectionTitle title='Services' overlay={true}/>
-            </div>
-            <div className='flexRow textBlock indent1 gap1 flex overlayWhite right bottom'>
-              <h2 className='w60 justifyRight indent1 gap2'>Providing high-end technology solutions to the upstream industry in Sub-Sahara Africa and beyond</h2>
-            </div>
+          </div>
+          <div className='flexRow textBlock indent1 gap1 flex overlayWhite right bottom'>
+            <h2 className='w60 justifyRight indent1 gap2'>Providing high-end technology solutions to the upstream industry in Sub-Sahara Africa and beyond</h2>
+          </div>
         </div>
 
         <SectionSubTitle subTitle='Adiure upiditate quia eligendi' />
@@ -36,7 +52,6 @@ class Services extends Component {
             </div>
           </div>
           <div className='image-pipes w40'></div>
-   
         </div>
 
         <SectionSubTitle subTitle='Some information' />
@@ -45,6 +60,10 @@ class Services extends Component {
           <p  className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit. Vlanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit.</p>
           <br />
           <p className='textSize1'>Ut placeat molestiae et debitis quae eum molestiae consequatur nam omnis saepe. Sit impedit reiciendis qui nulla deserunt sed magnam excepturi et nobis corporis ad illum explicabo et omnis Quis. Eum molestiae possimus in magnam ipsum ea velit molestiae nam galisum delectus et cupiditate perferendis et veritatis corrupti.</p>
+        </div>
+
+        <div className='flexColumn h20 indent2 gap1'>
+          <SlideShow slides={slidesA}/>
         </div>
 
         <div className='flexRow h50'>
@@ -69,9 +88,8 @@ class Services extends Component {
           <p className='textSize2'>Ut placeat molestiae et debitis quae eum molestiae consequatur nam omnis saepe. Sit impedit reiciendis qui nulla deserunt sed magnam excepturi et nobis corporis ad illum explicabo et omnis Quis. Eum molestiae possimus in magnam ipsum ea velit molestiae nam galisum delectus et cupiditate perferendis et veritatis corrupti.</p>
         </div>
 
-        <div className='flexRow center indent1 gap2'>
-          <IconNavUp />
-        </div>
+        <NavToTop />
+
       </div>
     )
   }

@@ -4,6 +4,8 @@ $navHeight: 61px;
 $navShadowBlur: 10px;
 
 $colorBackground: rgb(233, 233, 233);
+
+$colorBackground: rgb(87, 76, 76);
 $colorNavShadow: rgba(0,0,0,0.2);
 $colorNavItem: rgb(150, 150, 150);
 $colorNavItemSelected: black;
@@ -17,11 +19,16 @@ $textShadowColor: rgba(0,0,0,0.75);
 
 
 
-
 .flexColumn {
   display: flex;
   flex-direction: column;
   border: $devBorder solid red;
+  &.right {
+    align-items: flex-end;
+  }
+  &.left {
+    align-items: flex-start;
+  }
   &.center {
     align-items: center;
     justify-content: center;
@@ -71,8 +78,6 @@ $textShadowColor: rgba(0,0,0,0.75);
   
   &.bottom {
     align-items: flex-end;
-    // justify-content: flex-end;
-    // align-content: flex-end;
   }
 
 
@@ -100,6 +105,21 @@ $textShadowColor: rgba(0,0,0,0.75);
 .w75 {width: 75%}
 .w100 {width: 100%}
 
+// .h20 {height: 20vh}
+// .h25 {height: 25vh}
+// .h30 {height: 30vh}
+// .h33 {height: 33vh}
+// .h40 {height: 40vh}
+// .h50 {height: 50vh}
+// .h60 {height: 60vh}
+// .h66 {height: 66vh}
+// .h70 {height: 70vh}
+// .h75 {height: 75vh}
+// .h80 {height: 80vh}
+// .h90 {height: 90vh}
+// .h100 {height: 100vh}
+
+.h20 {min-height: 20vh}
 .h25 {min-height: 25vh}
 .h30 {min-height: 30vh}
 .h33 {min-height: 33vh}
@@ -175,7 +195,7 @@ h3 {
 
 .textSize0 {
   font-size: 18pt;
-  text-align: justify;
+  text-align: center;
 }
 
 .textSize1 {

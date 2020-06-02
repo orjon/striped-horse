@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import LogoImage from '../StripedHorseResourcesLogo.jpg';
+import { NavLink } from 'react-router-dom';
 
 class Logo extends Component {
   render(){
     return(
       <div className='Logo'>
-        <img className='LogoImage' src={LogoImage} alt='Striped Horse Resource Logo'/>
-        <div>Striped Horse Resources ltd</div>
+        <NavLink to={`/test/`} className='navItem' activeClassName='selected'>
+          <div className='flexRow center'>
+            <img className='LogoImage' src={LogoImage} alt='Striped Horse Resource Logo'/>
+            <div>Striped Horse Resources ltd</div>
+          </div>
+        </NavLink>
       </div> 
     )
   }

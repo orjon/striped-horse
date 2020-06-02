@@ -10,12 +10,20 @@ class Nav extends Component {
   constructor(props){
     super(props);
     this.state={
-      navLocations: ['Services','Partners', 'Ethics', 'About', 'Contact']
+      navLocations: ['services','partners', 'ethics', 'about', 'contact'],
+      // navBurgerMenu: false
     }
+    // this.toggleBurgerMenu = this.toggleBurgerMenu.bind(this)
   }
 
+  // toggleBurgerMenu() {
+  //   let isOpen = !this.state.navBurgerMenu
+  //   this.setState({ navBurgerMenu : isOpen })
+  // }
+
+
   render(){
-    const { navLocations } = this.state
+    let { navLocations} = this.state
 
     let navItems = navLocations.map(location => 
       <NavItem key={location} to={location}/>
@@ -30,13 +38,13 @@ class Nav extends Component {
             <a href='tel:+447848890660'>
               <IconPhone fontSize='small' className='contactItem'/>
             </a>
-            <a href='mailto:contact@striped-horse.com'>
+            <a href='mailto:contact@striped-horse.com' target='_blank'  rel='noopener noreferrer' >
               <IconEmail fontSize='small' className='contactItem'/>
             </a>
           </div>
         </div>
         <div className='navBurger'>
-          <NavBurgerMenu />
+          <NavBurgerMenu navLocations={navLocations}/>
         </div>
       </nav>
     )

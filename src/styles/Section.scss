@@ -4,13 +4,9 @@ section {
   border: $devBorder solid lime;
   padding-top: $navHeight;
   width :100%;
-  height: calc(100%-$navHeight100);
-
-
 
 
   .textBanner {
-    // align-items: flex-start;
     color: $colorBannerText;
     font-size: 30pt;
     border: $devBorder solid red;
@@ -36,13 +32,10 @@ section {
   }
 
       
-
-
   .PartnerBlock {
     padding: 25px;
     flex-basis: 25%;
     min-width: 250px;
-
     @media only screen and (max-width: 580px) {
       flex-basis: 100%;
     }
@@ -98,7 +91,7 @@ section {
 
   .image04{ 
     align-content: stretch;
-    background: url('../images/OilRig2.jpg');
+    background: url('../images/OilRig2sml.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -128,6 +121,17 @@ section {
     background-size: cover;
     background-position: center;
     border: $devBorder solid dodgerblue;
+  
+  }
+
+  .image-pumps{ 
+    // align-content: stretch;
+    background: url('../images/pumps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: $devBorder solid dodgerblue;
+    margin-left: 20px;
   }
 
 }

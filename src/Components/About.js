@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import '../styles/Section.scss';
 import SectionTitle from './SectionTitle';
 import SectionSubTitle from './SectionSubTitle';
+import NavToTop from './NavToTop';
 import { default as HeadShots } from './PartnerBlock';
-import { default as IconNavUp} from '@material-ui/icons/KeyboardArrowUp';
 
 
-class Partners extends Component {
+
+class About extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
   render(){
 
@@ -40,12 +45,11 @@ class Partners extends Component {
           </div>
         </div>
 
-        <div className='flexRow center indent1 gap2'>
-          <IconNavUp />
-        </div>
+        <NavToTop />
+
       </div>
     )
   }
 }
 
-export default Partners;
+export default About;

@@ -3,10 +3,14 @@ import '../styles/Section.scss';
 import PartnerBlock from './PartnerBlock';
 import SectionTitle from './SectionTitle';
 import SectionSubTitle from './SectionSubTitle';
-import { default as IconNavUp} from '@material-ui/icons/KeyboardArrowUp';
+import NavToTop from './NavToTop';
 
 
 class Partners extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
   // constructor(props){
   //   super(props);
@@ -84,9 +88,9 @@ class Partners extends Component {
         <div className='flexColumn textBlock indent2 gap1'>
           <p  className='textSize1'>Ut placeat molestiae et debitis quae eum molestiae consequatur nam omnis saepe. Sit impedit reiciendis qui nulla deserunt sed magnam excepturi et nobis corporis ad illum explicabo et omnis Quis. Eum molestiae possimus in magnam ipsum ea velit molestiae nam galisum delectus et cupiditate perferendis et veritatis corrupti.</p>
         </div>
-        <div className='flexRow center indent1 gap2'>
-          <IconNavUp />
-        </div>
+
+        <NavToTop />
+
       </div>
     )
   }

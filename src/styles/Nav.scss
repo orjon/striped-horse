@@ -5,6 +5,7 @@ $navBorder: 0px solid rgb(0, 129, 199);
 .Nav {
   position: fixed;
   top: 0;
+  z-index: 10;
   display: flex;
   flex-direction: row;
   padding: 10px;
@@ -33,6 +34,21 @@ $navBorder: 0px solid rgb(0, 129, 199);
     display: none;
   }
 
+  .navItem {
+    color: $colorNavItem;
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    font-size: 10pt;
+    margin: 5px;
+    text-decoration: none;
+      &.selected {
+        color: $colorNavItemSelected;
+      }
+      :hover {
+        color: $colorNavItemSelected;
+      }
+    }
+
   .navBurger {
     border: $devBorder solid cyan;
     padding: 5px;
@@ -41,6 +57,21 @@ $navBorder: 0px solid rgb(0, 129, 199);
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    .burgerMenuItems{
+      z-index: 9;
+      // box-shadow: 0px 0px $navShadowBlur $colorNavShadow;
+      background-color: white;
+      position: fixed;
+      top: $navHeight;
+      right: 0px;
+      // color: red;
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
   }
   
   .contactItems {
@@ -55,6 +86,15 @@ $navBorder: 0px solid rgb(0, 129, 199);
     }
   }
 
+}
+
+.scrollUp{
+  border: $devBorder solid cyan;
+  color: $colorNavItem;
+  cursor: pointer;
+  :hover {
+    color: $colorNavItemSelected;
+  }
 }
 
 /* SMARTPHONES PORTRAIT */
@@ -89,21 +129,6 @@ $navBorder: 0px solid rgb(0, 129, 199);
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-
-      .navItem {
-      color: $colorNavItem;
-      text-transform: uppercase;
-      letter-spacing: 1.5pt;
-      font-size: 10pt;
-      margin: 5px;
-      text-decoration: none;
-        &.selected {
-          color: $colorNavItemSelected;
-        }
-        :hover {
-          color: $colorNavItemSelected;
-        }
-      }
     }
   
   }

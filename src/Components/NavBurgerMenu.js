@@ -31,7 +31,10 @@ class NavBurgerMenu extends Component {
 
     return (
       <div className='burgerMenu'>
-        {menuOpen? <IconClose onClick={this.handleClick}/> : <IconNavBurger onClick={this.handleClick}/>}
+        {menuOpen? 
+          <div className='navIcon'><IconClose onClick={this.handleClick}/></div>
+           :
+           <div className='navIcon'><IconNavBurger onClick={this.handleClick}/></div>}
         {menuOpen? 
           <div className='burgerMenuItems indent1 gap2' onClick={this.handleClick}>
             {navItems}

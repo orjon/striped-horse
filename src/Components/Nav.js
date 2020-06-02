@@ -35,11 +35,11 @@ class Nav extends Component {
         <div className='navItems'>
           {navItems}
           <div className='contactItems'>
-            <a href='tel:+447848890660'>
-              <IconPhone fontSize='small' className='contactItem'/>
+            <a href='tel:+447848890660' className='navIcon'>
+              <IconPhone fontSize='small'/>
             </a>
-            <a href='mailto:contact@striped-horse.com' target='_blank'  rel='noopener noreferrer' >
-              <IconEmail fontSize='small' className='contactItem'/>
+            <a href='mailto:contact@striped-horse.com' target='_blank'  rel='noopener noreferrer' className='navIcon'>
+              <IconEmail fontSize='small'/>
             </a>
           </div>
         </div>

@@ -9,7 +9,6 @@ $navBorder: 0px solid rgb(0, 129, 199);
   display: flex;
   flex-direction: row;
   padding: 10px;
-  background-color: rgba(211, 211, 211, 0.5);
   background-color: white;
   border: $devBorder solid blue;
   height: $navHeight;
@@ -30,28 +29,31 @@ $navBorder: 0px solid rgb(0, 129, 199);
     }
   }
 
+  .navIcon, .navItem {
+    cursor: pointer;
+    margin: 5px;
+    color: $colorNavItem;
+    :hover {
+      color: $colorNavItemSelected;
+    }
+    &.selected {
+      color: $colorNavItemSelected;
+    }
+  }
+
   .navItems {
     display: none;
   }
 
   .navItem {
-    color: $colorNavItem;
     text-transform: uppercase;
     letter-spacing: 1.5pt;
     font-size: 10pt;
-    margin: 5px;
     text-decoration: none;
-      &.selected {
-        color: $colorNavItemSelected;
-      }
-      :hover {
-        color: $colorNavItemSelected;
-      }
     }
 
   .navBurger {
     border: $devBorder solid cyan;
-    padding: 5px;
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -59,14 +61,10 @@ $navBorder: 0px solid rgb(0, 129, 199);
     align-items: center;
 
     .burgerMenuItems{
-      z-index: 9;
-      // box-shadow: 0px 0px $navShadowBlur $colorNavShadow;
-      background-color: white;
+      background-color: $colorNavBurgerBackground;
       position: fixed;
       top: $navHeight;
       right: 0px;
-      // color: red;
-      // border: 1px solid red;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -74,17 +72,7 @@ $navBorder: 0px solid rgb(0, 129, 199);
     }
   }
   
-  .contactItems {
-    color: $colorNavItem;
-    
-    .contactItem {
-      margin: 5px;
-    }
 
-    :hover {
-      color: $colorNavItemSelected;
-    }
-  }
 
 }
 

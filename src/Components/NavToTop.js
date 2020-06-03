@@ -8,7 +8,7 @@ class NavToTop extends Component {
   render(){
     return(
       <div className='scrollUp flexRow w100 center'>
-        <ScrollTop scrollStepInPx="50" delayInMs="16.66"/>
+        <ScrollTop scrollStepInPx="75" delayInMs="16.66"/>
       </div>
     )
   }

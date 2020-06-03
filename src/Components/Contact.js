@@ -25,7 +25,7 @@ class Contact extends Component {
               </a>
 
               <a href='tel:+447848890660' className='gap10'>
-                <IconPhone fontSize='small' className='contactItem'/> +44 (0)784 8890660
+                <IconPhone fontSize='small' className='contactItem'/> +44 (0)XXX XXXXXX
               </a>
 
               <div className='gap10'>

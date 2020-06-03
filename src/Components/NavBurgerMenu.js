@@ -11,6 +11,7 @@ class NavBurgerMenu extends Component {
       menuOpen: false
     };
     this.handleClick=this.handleClick.bind(this);
+    // this.startTimer=this.startTimer.bind(this);
   }
 
 
@@ -18,7 +19,13 @@ class NavBurgerMenu extends Component {
   handleClick() {
     let isOpen = !this.state.menuOpen
     this.setState({ menuOpen : isOpen })
+    setTimeout(() => {
+      this.setState({
+        menuOpen: false
+      });
+    }, 10000);
   }
+
 
   render(){
 
@@ -30,7 +37,7 @@ class NavBurgerMenu extends Component {
     )
 
     return (
-      <div className='burgerMenu'>
+      <div className='burgerMenu' >
         {menuOpen? 
           <div className='navIcon'><IconClose onClick={this.handleClick}/></div>
            :

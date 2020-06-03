@@ -16,19 +16,19 @@ class Contact extends Component {
       <div className='Contact'>
         <SectionTitle title='Contact Details' />
         {/* <SectionSubTitle subTitle='Please get in touch...' /> */}
-        <div className='h80 flexColumn gap1 center'>
+        <div className='h80 flexColumn gap10 center'>
 
           <div className='flexRow center textBanner w50'>
             <div className='flexColumn textSize0'>
-            <a href='mailto:contact@striped-horse.com' target='_blank' rel='noopener noreferrer' className='gap1'>
+            <a href='mailto:contact@striped-horse.com' target='_blank' rel='noopener noreferrer' className='gap10'>
                 <IconEmail fontSize='small' className='contactItem'/> contact@striped-horse.com
               </a>
 
-              <a href='tel:+447848890660' className='gap1'>
+              <a href='tel:+447848890660' className='gap10'>
                 <IconPhone fontSize='small' className='contactItem'/> +44 (0)784 8890660
               </a>
 
-              <div className='gap1'>
+              <div className='gap10'>
               Striped Horse Resources Ltd<br />
               46 High St<br />
               Much Wenlock<br />

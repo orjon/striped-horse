@@ -90,10 +90,8 @@ $textShadowColor: rgba(0,0,0,0.75);
 }
 
 
-
 .flexWrap {
   flex-wrap: wrap;
-  // align-content: space-between;
   justify-content: space-around;
 }
 
@@ -105,20 +103,6 @@ $textShadowColor: rgba(0,0,0,0.75);
 .w70 {width: 70%}
 .w75 {width: 75%}
 .w100 {width: 100%}
-
-// .h20 {height: 20vh}
-// .h25 {height: 25vh}
-// .h30 {height: 30vh}
-// .h33 {height: 33vh}
-// .h40 {height: 40vh}
-// .h50 {height: 50vh}
-// .h60 {height: 60vh}
-// .h66 {height: 66vh}
-// .h70 {height: 70vh}
-// .h75 {height: 75vh}
-// .h80 {height: 80vh}
-// .h90 {height: 90vh}
-// .h100 {height: 100vh}
 
 .h20 {min-height: 20vh}
 .h25 {min-height: 25vh}
@@ -134,36 +118,32 @@ $textShadowColor: rgba(0,0,0,0.75);
 .h90 {min-height: 90vh}
 .h100 {min-height: 100vh}
 
-.indent1 {
+.indent10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.indent20 {
   padding-left: 20px;
   padding-right: 20px;
 }
-.indent2 {
+.indent40 {
   padding-left: 40px;
   padding-right: 40px;
 }
-.indent3 {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-.indent4 {
-  padding-left: 80px;
-  padding-right: 80px;
-}
 
-.gap1 {
+.gap10 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.gap2 {
+.gap20 {
   padding-top:20px;
   padding-bottom: 20px;
 }
-.gap3 {
+.gap30 {
   padding-top: 75px;
   padding-bottom: 20px;
 }
-.gap4 {
+.gap40 {
   padding-top: 100px;
   padding-bottom: 20px;
 }
@@ -191,7 +171,6 @@ h2 {
 
 h3 {
   font-size: 25pt;
-  // text-align: justify;
 }
 
 .textSize0 {
@@ -213,8 +192,3 @@ h3 {
   font-size: 12pt;
   text-align: justify;
 }
-
-
-// p {
-//   font-size: 25pt;
-// }

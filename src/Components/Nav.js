@@ -30,7 +30,7 @@ class Nav extends Component {
     )
 
     return(
-      <nav className='Nav w100'>
+      <nav className='Nav w100 indent10 gap10'>
         <Logo />
         <div className='navItems'>
           {navItems}

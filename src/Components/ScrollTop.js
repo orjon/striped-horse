@@ -24,7 +24,7 @@ class ScrollTop extends Component {
   }
   
   render () {
-      return <div className='flexRow center gap2' 
+      return <div className='flexRow center gap20' 
                onClick={ () => { this.scrollToTop(); }}>
                 <IconNavUp />
               </div>;

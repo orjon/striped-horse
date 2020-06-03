@@ -12,7 +12,7 @@ class SectionTitle extends Component {
 
     return(
       <div className='flexRow'>
-        <div className={`textBlock w100 indent1 gap1 ${overlayWhite ? 'overlayWhite':''}`}>
+        <div className={`textBlock w100 indent20 gap10 ${overlayWhite ? 'overlayWhite':''}`}>
           <h2>{title}</h2>
         </div>
      </div>

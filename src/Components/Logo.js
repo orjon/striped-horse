@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LogoImage from '../StripedHorseResourcesLogo.jpg';
+import LogoImage from '../images/logo/StripedHorseResources_Logo200x200.png';
 import { NavLink } from 'react-router-dom';
 
 class Logo extends Component {

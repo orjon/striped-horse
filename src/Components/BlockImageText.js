@@ -12,7 +12,7 @@ class BlockImageText extends Component {
 
     return(
       <div className={`BlockImageText indent20 gap40 flexColumn middle ${width}`}>
-        <div className='Card flexColumn middle indent40 gap40'>
+        <div className='Card flexColumn middle indent20 gap40'>
 
           <a href={link} target='_blank' rel='noopener noreferrer'>
             <img className='BlockImage' src={imagePath} alt={`${title} logo`}/>

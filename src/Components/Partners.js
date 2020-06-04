@@ -70,37 +70,37 @@ class Partners extends Component {
 
           <PartnerBlock
             link='http://www.emgs.com/'
-            width='quarter'
+            width='half'
             textAlign='middle'
             image='partners/EMGS.png'
             title='EMGS ASA'
-            text='Corporis molestiae et quia nobis. Et omnis doloremque ad porro minima qui voluptatum consequatur.'
+            text='ElectroMagnetic Geoservices (EMGS ASA) is an Oslo based market leader in the acquisition, processing, imaging and interpretation of marine CSEM data. When integrated with other Geophysical data, such as seismic, CSEM provides for an updated probability of success and volumetric estimation in pre-drill and post-drill settings. To date the company has acquired over 900 commercial surveys and has an extensive multi-client data library in strategic basins around the world.'
           />
 
           <PartnerBlock
             link='http://www.nventures.co.uk/'
-            width='quarter'
+            width='half'
             textAlign='middle'
             image='partners/NVentures.jpg'
             title='NVentures'
-            text='Lorem ipsum, dolor sit amet sectetur pisicing elit. Eos quidem beatae et itaque explicabo et deserunt.'
+            text='NVentures is a UK based upstream exploration firm specialising in technical and commercial intelligence for explorationists. The firm delivers high quality, comprehensive data and reports to oil and service companies worldwide.'
           />
 
           <PartnerBlock
             link='https://promote-energy.com/'
-            width='quarter'
+            width='half'
             textAlign='middle'
             image='partners/PromoteEnergy.jpg'
             title='Promote Energy'
-            text='Sit aut quidem asperiores sunt est facere nesciunt aut recusandae. Id vero illo et aperiam temporibus.'
+            text='Promote Energy is a Cairo based consultancy and advisory company with a vision to play a key role in the future of energy in Egypt and beyond.'
           />
           <PartnerBlock
             link='http://www.pveconsulting.co.uk/'
-            width='quarter'
+            width='half'
             textAlign='middle'
             image='partners/PVE.png'
             title='PVE Consulting'
-            text='Ut nobis dolore est autem. Qui dolore vitae a quod tempore.'
+            text='PVE Consulting is a UK based international advisory consulting firm for the upstream E&amp;P sector. The firm is engaged with a number of E&amp;P companies across Africa and other regions, with high level mandates in transaction support and exploration campaigns.'
           />
         </div>
         {/* <SectionSubTitle subTitle='Delectus et cupiditate' />
@@ -124,3 +124,7 @@ class Partners extends Component {
 }
 
 export default Partners;
+
+
+
+

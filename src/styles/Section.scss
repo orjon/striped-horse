@@ -18,10 +18,14 @@ section {
   }
 
   .textBlock {
+    border: $devBorder solid cyan;
     align-items: flex-start;
     color: $colorBannerText;
-    
-    border: $devBorder solid red;
+  }
+
+  .Card {
+    height: 100%;
+    box-shadow: 0px 0px $navShadowBlur $colorCardShadow;
   }
 
   .textBanner, .textBlock {
@@ -31,42 +35,7 @@ section {
     }
   }
 
-      
-  .PartnerBlock {
-    padding: 25px;
-    flex-basis: 25%;
-    min-width: 250px;
-    @media only screen and (max-width: 580px) {
-      flex-basis: 100%;
-    }
-  }
 
-  .PartnerImage {
-    $partnerImageSize: 125px;
-    border: $devBorder solid purple;
-    padding: 10px;
-    max-width: $partnerImageSize;
-    max-height: $partnerImageSize;
-    margin-bottom: 5px;
-  }
-  .PartnerText {
-    border: $devBorder solid fuchsia;
-    flex: 1;
-    strong {
-      text-transform: capitalize;
-      margin-bottom: 5px;
-    }
-    p {
-      text-align: left;
-    }
-  }
-
-
-  .heroImage {
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-  }
 
   .image01{ 
     background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/Services01.jpg');

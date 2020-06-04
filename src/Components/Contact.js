@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SectionTitle from './SectionTitle';
-import NavToTop from './NavToTop';
+// import NavToTop from './NavToTop';
 import { default as IconEmail}  from '@material-ui/icons/EmailOutlined';
 import { default as IconPhone} from '@material-ui/icons/Call';
 
@@ -24,7 +24,7 @@ class Contact extends Component {
                 <IconEmail fontSize='small' className='contactItem'/> contact@striped-horse.com
               </a>
 
-              <a href='tel:+447848890660' className='gap10'>
+              <a href='tel:+44XXXXXXXXXX' className='gap10'>
                 <IconPhone fontSize='small' className='contactItem'/> +44 (0)XXX XXXXXX
               </a>
 
@@ -41,7 +41,7 @@ class Contact extends Component {
 
         </div>
 
-        <NavToTop />
+        {/* <NavToTop /> */}
         
       </div>
     )

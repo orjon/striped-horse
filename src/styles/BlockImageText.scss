@@ -1,0 +1,61 @@
+
+@import 'Variables.scss';
+
+.BlockImageText {
+  border: $devBorder solid lime;
+  min-width: 250px;
+  @media only screen and (max-width: 580px) {
+    flex-basis: 100%;
+  }
+
+  &.whole {
+    flex-basis: 100%;
+  }
+
+  &.quarter {
+    flex-basis: 25%;
+  }
+
+  &.third {
+      flex-basis: 33.3%;
+  }
+
+  &.half {
+    flex-basis: 50%;
+}
+
+  .BlockImage {
+    $BlockImageSize: 250px;
+    border: $devBorder solid purple;
+    max-width: 100%;
+    max-height: $BlockImageSize;
+  }
+  .PartnerText {
+    border: $devBorder solid fuchsia;
+    flex: 1;
+    strong {
+      text-transform: capitalize;
+      margin-bottom: 5px;
+    }
+    p {
+      text-align: left;
+    }
+  }
+}
+
+
+// img{
+//   max-width: 100%;
+//   height: $iconProject;
+//   transition-timing-function: ease-out;
+//   -webkit-transition: height .15s; /* For Safari 3.1 to 6.0 */
+//   transition: height .15s;
+//   &:hover {
+//     max-width: 100%;
+//     height: $iconProjectHover;
+//     transition-timing-function: ease-out;
+//     -webkit-transition: height .1s; /* For Safari 3.1 to 6.0 */
+//     transition: height .1s;
+//   } $iconProject: 70%;
+//   $iconProjectHover: $iconProject + 15%;
+// }

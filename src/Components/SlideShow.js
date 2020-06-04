@@ -47,3 +47,5 @@ class SlideShow extends Component{
 
 export default SlideShow;
 
+// https://www.npmjs.com/package/react-slideshow-image
+

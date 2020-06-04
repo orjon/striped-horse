@@ -3,8 +3,14 @@ import { NavLink } from 'react-router-dom';
 
 class NavItem extends Component {
   render(){
+    let location = this.props.to
+
+    // if (location === 'home') {
+    //   location = ''
+    // }
+
     return(
-      <NavLink to={`/test/${this.props.to}`} className='navItem' activeClassName='selected'>
+      <NavLink to={`/test/${location}`} className='navItem' activeClassName='selected'>
         <div>{this.props.to}</div>
       </NavLink>
     )

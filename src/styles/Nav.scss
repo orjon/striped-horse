@@ -2,6 +2,15 @@
 
 $navBorder: 0px solid rgb(0, 129, 199);
 
+.navTextLink {
+  border: $devBorder solid cyan;
+  cursor: pointer;
+  color: $colorNavItem;
+  :hover {
+    color: $colorNavItemSelected;
+  }
+}
+
 .Nav {
   position: fixed;
   top: 0;

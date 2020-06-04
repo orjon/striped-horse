@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Section.scss';
-import PartnerBlock from './PartnerBlock';
+import { default as PartnerBlock }  from './BlockImageText';
 import SectionTitle from './SectionTitle';
-import SectionSubTitle from './SectionSubTitle';
-import NavToTop from './NavToTop';
 
 
 class Partners extends Component {
@@ -61,22 +59,51 @@ class Partners extends Component {
     return(
       <div className='Partners'>
         <SectionTitle title='Our Partners' />
-        <div className='flexColumn textBlock indent40 gap10'>
+
+        {/* <div className='flexColumn textBlock indent40 gap10'>
           <p  className='textSize1'>Aut consequatur voluptate et aperiam minima est nihil cumque. Rem rerum recusandae ut quas labore sit libero quasi! Aut vitae iste et modi dolor id ratione voluptatem sit quia mollitia aut voluptas dolor 33 modi deleniti.</p>
           <br />
           <p  className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit.</p>
-        </div>
+        </div> */}
+
         <div className='flexRow flexWrap indent40 gap10'>
-          <PartnerBlock partner='bp' text='Corporis molestiae et quia nobis. Et omnis doloremque ad porro minima qui voluptatum consequatur.'/>
-          <PartnerBlock partner='elf' text='Lorem ipsum, dolor sit amet sectetur pisicing elit. Eos quidem beatae et itaque explicabo et deserunt.'/>
-          <PartnerBlock partner='eni' text='Sit aut quidem asperiores sunt est facere nesciunt aut recusandae. Id vero illo et aperiam temporibus.'/>
-          <PartnerBlock partner='chevron' text='Ut nobis dolore est autem. Qui dolore vitae a quod tempore.'/>
-          <PartnerBlock partner='q8' text='Dolm aut quasi volupt atem. At vero voluptatem omnis doloremque recusandae internos.'/>
-          <PartnerBlock partner='tamoil' text='Fuga consequuntur in fugit ducimus. At fugit distinctio aut eaque quia et molestiae quia ut similique voluptas.'/>
-          <PartnerBlock partner='petronas' text='Inventore reprehenderit et magnam autem et illum nihil qui explicabo.'/>
-          <PartnerBlock partner='esso' text='Sit repudiandae aut quidem asperiores est officiis sunt est facere nesciunt. Quidem beatae et itaque explicabo.'/>
+
+          <PartnerBlock
+            link='http://www.emgs.com/'
+            width='quarter'
+            textAlign='middle'
+            image='partners/EMGS.png'
+            title='EMGS ASA'
+            text='Corporis molestiae et quia nobis. Et omnis doloremque ad porro minima qui voluptatum consequatur.'
+          />
+
+          <PartnerBlock
+            link='http://www.nventures.co.uk/'
+            width='quarter'
+            textAlign='middle'
+            image='partners/NVentures.jpg'
+            title='NVentures'
+            text='Lorem ipsum, dolor sit amet sectetur pisicing elit. Eos quidem beatae et itaque explicabo et deserunt.'
+          />
+
+          <PartnerBlock
+            link='https://promote-energy.com/'
+            width='quarter'
+            textAlign='middle'
+            image='partners/PromoteEnergy.jpg'
+            title='Promote Energy'
+            text='Sit aut quidem asperiores sunt est facere nesciunt aut recusandae. Id vero illo et aperiam temporibus.'
+          />
+          <PartnerBlock
+            link='http://www.pveconsulting.co.uk/'
+            width='quarter'
+            textAlign='middle'
+            image='partners/PVE.png'
+            title='PVE Consulting'
+            text='Ut nobis dolore est autem. Qui dolore vitae a quod tempore.'
+          />
         </div>
-        <SectionSubTitle subTitle='Delectus et cupiditate' />
+        {/* <SectionSubTitle subTitle='Delectus et cupiditate' />
 
         <div className='flexColumn textBlock indent40 gap10'>
           <p  className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit. Vlanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit.</p>
@@ -87,9 +114,9 @@ class Partners extends Component {
         <SectionSubTitle subTitle='More interesting information' />
         <div className='flexColumn textBlock indent40 gap10'>
           <p  className='textSize1'>Ut placeat molestiae et debitis quae eum molestiae consequatur nam omnis saepe. Sit impedit reiciendis qui nulla deserunt sed magnam excepturi et nobis corporis ad illum explicabo et omnis Quis. Eum molestiae possimus in magnam ipsum ea velit molestiae nam galisum delectus et cupiditate perferendis et veritatis corrupti.</p>
-        </div>
+        </div> */}
 
-        <NavToTop />
+        {/* <NavToTop /> */}
 
       </div>
     )

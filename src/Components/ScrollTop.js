@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { default as IconNavUp} from '@material-ui/icons/KeyboardArrowUp';
+// import { default as IconNavUp} from '@material-ui/icons/KeyboardArrowUp';
+import { default as IconNavUp}  from '@material-ui/icons/ArrowUpward';
 
 
 class ScrollTop extends Component {

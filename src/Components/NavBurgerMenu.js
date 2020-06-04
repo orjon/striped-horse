@@ -9,6 +9,7 @@ class NavBurgerMenu extends Component {
     super(props);
     this.state= {
       menuOpen: false
+      // timerRunning: false
     };
     this.handleClick=this.handleClick.bind(this);
     // this.startTimer=this.startTimer.bind(this);
@@ -17,13 +18,13 @@ class NavBurgerMenu extends Component {
 
 
   handleClick() {
+    // let { timerRunning } = this.state
     let isOpen = !this.state.menuOpen
     this.setState({ menuOpen : isOpen })
-    setTimeout(() => {
-      this.setState({
-        menuOpen: false
-      });
-    }, 10000);
+    
+    // let menuTimer = setTimeout(() => {
+    //   this.setState({ menuOpen: false});
+    // }, 10000);
   }
 
 

@@ -1,0 +1,14 @@
+@import 'Variables.scss';
+
+p {
+  border: $devBorder solid #DDD;
+ 
+  img {
+    width: 400px;
+    max-width: 450px;
+    min-width: 350px;
+  &.left {
+      float: left;
+      padding: 0 20px 20px 0;}
+  }
+}

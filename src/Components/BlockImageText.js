@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/BlockImageText.scss';
 
 
+
 class BlockImageText extends Component {
   render(){
     let { title , text, image, width, link } = this.props
@@ -14,9 +15,9 @@ class BlockImageText extends Component {
 
 
     return(
-      <div className={`BlockImageText gridItem flexColumn middle ${width}`}>
-
-        <div className='Card flexColumn middle indent40 gap40'>
+      <div className={`BlockImageText indent20 gap20 flexColumn middle ${width}`}>
+ 
+        <div className='Card flexColumn middle indent20 gap40'>
         
 
           <a href={link} target='_blank' rel='noopener noreferrer'>

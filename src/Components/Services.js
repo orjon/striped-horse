@@ -23,8 +23,8 @@ class Services extends Component {
           <p className='textSize0'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis ad iure odio At necessitatibus omnis eos quia dolores ab maiores commodi et modi sapiente qui necessitatibus voluptatem. Et Quis obcaecati aut labore voluptatem eos voluptas velit. Vlanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi.</p>
         </div> 
 
-        {/* <div className='flexRow flexWrap indent40 gap10'> */}
-        <div className='gridContainer textBlock indent40 gap20'>
+        <div className='flexRow flexWrap indent40 gap10'>
+        {/* <div className='gridContainer textBlock indent40 gap20'> */}
 
           <BlockImageText 
             // width='third'

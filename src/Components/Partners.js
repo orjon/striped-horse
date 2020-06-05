@@ -68,7 +68,7 @@ class Partners extends Component {
           <p  className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit.</p>
         </div> */}
 
-        <div className='flexColumn indent40 gap10'>
+        <div className='flexColumn indent40'>
 
           <PartnerBlock
             orientation='flexRow'

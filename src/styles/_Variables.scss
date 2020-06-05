@@ -1,5 +1,8 @@
 $devBorder: 0px;
 
+$breakPoint1: 980px;
+$breakPoint2: 1385px;
+
 $navHeight: 68px;
 $navShadowBlur: 10px;
 
@@ -19,6 +22,8 @@ $imageDarken: .1;
 
 $textShadowBlur: 5px;
 $textShadowColor: rgba(0,0,0,0.75);
+
+
 
 
 
@@ -70,7 +75,9 @@ $textShadowColor: rgba(0,0,0,0.75);
     align-items: center;
   }
   &.top {
-    align-items: flex-start;
+    // align-items: flex-start;
+    align-items: center;
+    justify-content: center;
   }
   &.bottom {
     align-items: flex-end;
@@ -98,6 +105,7 @@ $textShadowColor: rgba(0,0,0,0.75);
 .w80 {width: 80%}
 .w100 {width: 100%}
 
+.h0 {min-height: 0vh}
 .h20 {min-height: 20vh}
 .h25 {min-height: 25vh}
 .h30 {min-height: 30vh}

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/Section.scss';
 import { default as PartnerBlock }  from './BlockImageText';
-import { default as PartnerRow }  from './RowImageText';
+import NavToTop from './NavToTop';
 import SectionTitle from './SectionTitle';
+import SectionSubTitle from './SectionSubTitle';
 
 
 class Partners extends Component {
@@ -67,83 +68,103 @@ class Partners extends Component {
           <p  className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit.</p>
         </div> */}
 
-        <div className='flexRow flexWrap indent40 gap10'>
-
-          <PartnerRow
-            link='http://www.emgs.com/'
-            width='half'
-            textAlign='middle'
-            image='partners/EMGS.png'
-            title='EMGS ASA'
-            text='ElectroMagnetic Geoservices (EMGS ASA) is an Oslo based market leader in the acquisition, processing, imaging and interpretation of marine CSEM data. When integrated with other Geophysical data, such as seismic, CSEM provides for an updated probability of success and volumetric estimation in pre-drill and post-drill settings. To date the company has acquired over 900 commercial surveys and has an extensive multi-client data library in strategic basins around the world.'
-          />
-
-          <PartnerRow
-            link='http://www.nventures.co.uk/'
-            width='half'
-            textAlign='middle'
-            image='partners/NVentures.jpg'
-            title='NVentures'
-            text='NVentures is a UK based upstream exploration firm specialising in technical and commercial intelligence for explorationists. The firm delivers high quality, comprehensive data and reports to oil and service companies worldwide.'
-          />
-
-          <PartnerRow
-            link='https://promote-energy.com/'
-            width='half'
-            textAlign='middle'
-            image='partners/PromoteEnergy.jpg'
-            title='Promote Energy'
-            text='Promote Energy is a Cairo based consultancy and advisory company with a vision to play a key role in the future of energy in Egypt and beyond.'
-          />
-          <PartnerRow
-            link='http://www.pveconsulting.co.uk/'
-            width='half'
-            textAlign='middle'
-            image='partners/PVE.png'
-            title='PVE Consulting'
-            text='PVE Consulting is a UK based international advisory consulting firm for the upstream E&amp;P sector. The firm is engaged with a number of E&amp;P companies across Africa and other regions, with high level mandates in transaction support and exploration campaigns.'
-          />
-        </div>
-
-        <div className='flexRow flexWrap indent40 gap10'>
+        <div className='flexColumn indent40 gap10'>
 
           <PartnerBlock
+            orientation='flexRow'
+            alignment='middle'
             link='http://www.emgs.com/'
-            width='half'
             textAlign='middle'
+            titleAlign='textLeft'
             image='partners/EMGS.png'
             title='EMGS ASA'
             text='ElectroMagnetic Geoservices (EMGS ASA) is an Oslo based market leader in the acquisition, processing, imaging and interpretation of marine CSEM data. When integrated with other Geophysical data, such as seismic, CSEM provides for an updated probability of success and volumetric estimation in pre-drill and post-drill settings. To date the company has acquired over 900 commercial surveys and has an extensive multi-client data library in strategic basins around the world.'
           />
 
           <PartnerBlock
+            orientation='flexRow'
+            alignment='middle'
             link='http://www.nventures.co.uk/'
-            width='half'
             textAlign='middle'
+            titleAlign='textLeft'
             image='partners/NVentures.jpg'
             title='NVentures'
             text='NVentures is a UK based upstream exploration firm specialising in technical and commercial intelligence for explorationists. The firm delivers high quality, comprehensive data and reports to oil and service companies worldwide.'
           />
 
           <PartnerBlock
+            orientation='flexRow'
+            alignment='middle'
             link='https://promote-energy.com/'
-            width='half'
             textAlign='middle'
+            titleAlign='textLeft'
             image='partners/PromoteEnergy.jpg'
             title='Promote Energy'
             text='Promote Energy is a Cairo based consultancy and advisory company with a vision to play a key role in the future of energy in Egypt and beyond.'
           />
           <PartnerBlock
+            orientation='flexRow'
+            alignment='middle'
             link='http://www.pveconsulting.co.uk/'
-            width='half'
             textAlign='middle'
+            titleAlign='textLeft'
             image='partners/PVE.png'
             title='PVE Consulting'
             text='PVE Consulting is a UK based international advisory consulting firm for the upstream E&amp;P sector. The firm is engaged with a number of E&amp;P companies across Africa and other regions, with high level mandates in transaction support and exploration campaigns.'
           />
         </div>
 
-        {/* <NavToTop /> */}
+        <NavToTop />
+
+        <SectionSubTitle subTitle='Option B' />
+
+        <div className='flexRow flexWrap indent40 gap10'>
+
+          <PartnerBlock
+            orientation='flexColumn'
+            alignment='middle'
+            link='http://www.emgs.com/'
+            textAlign='middle'
+            titleAlign='textCenter'
+            image='partners/EMGS.png'
+            title='EMGS ASA'
+            text='ElectroMagnetic Geoservices (EMGS ASA) is an Oslo based market leader in the acquisition, processing, imaging and interpretation of marine CSEM data. When integrated with other Geophysical data, such as seismic, CSEM provides for an updated probability of success and volumetric estimation in pre-drill and post-drill settings. To date the company has acquired over 900 commercial surveys and has an extensive multi-client data library in strategic basins around the world.'
+          />
+
+          <PartnerBlock
+            orientation='flexColumn'
+            alignment='middle'
+            link='http://www.nventures.co.uk/'
+            textAlign='middle'
+            titleAlign='textCenter'
+            image='partners/NVentures.jpg'
+            title='NVentures'
+            text='NVentures is a UK based upstream exploration firm specialising in technical and commercial intelligence for explorationists. The firm delivers high quality, comprehensive data and reports to oil and service companies worldwide.'
+          />
+
+          <PartnerBlock
+            orientation='flexColumn'
+            alignment='middle'
+            link='https://promote-energy.com/'
+            textAlign='middle'
+            titleAlign='textCenter'
+            image='partners/PromoteEnergy.jpg'
+            title='Promote Energy'
+            text='Promote Energy is a Cairo based consultancy and advisory company with a vision to play a key role in the future of energy in Egypt and beyond.'
+          />
+          <PartnerBlock
+            orientation='flexColumn'
+            alignment='middle'
+            link='http://www.pveconsulting.co.uk/'
+            textAlign='middle'
+            titleAlign='textCenter'
+            image='partners/PVE.png'
+            title='PVE Consulting'
+            text='PVE Consulting is a UK based international advisory consulting firm for the upstream E&amp;P sector. The firm is engaged with a number of E&amp;P companies across Africa and other regions, with high level mandates in transaction support and exploration campaigns.'
+          />
+        </div>
+
+        <NavToTop />
 
       </div>
     )

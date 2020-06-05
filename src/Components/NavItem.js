@@ -10,7 +10,7 @@ class NavItem extends Component {
     // }
 
     return(
-      <NavLink to={`/test/${location}`} className='navItem' activeClassName='selected'>
+      <NavLink to={`/test/${location}`} className='navItem indent10' activeClassName='selected'>
         <div>{this.props.to}</div>
       </NavLink>
     )

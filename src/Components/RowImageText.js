@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
 import '../styles/BlockImageText.scss';
 
-
-class BlockImageText extends Component {
+class RowImageText extends Component {
   render(){
     let { title , text, image, width, link } = this.props
 
-    if (link === undefined) {
-      console.log('Undefined link for:', title)
-    }
+    console.log('Link:', link)
 
     const imagePath = require(`../images/${image}`)
 
 
     return(
-      <div className={`BlockImageText gridItem flexColumn middle ${width}`}>
+      <div className={`BlockImageText indent20 gap20 flexRow middle ${width}`}>
 
-        <div className='Card flexColumn middle indent40 gap40'>
-        
+        <div className='Card flexRow middle indent20 gap40'>
 
           <a href={link} target='_blank' rel='noopener noreferrer'>
             <img className='BlockImage' src={imagePath} alt={`${title} logo`}/>
@@ -37,4 +33,4 @@ class BlockImageText extends Component {
   }
 }
 
-export default BlockImageText
+export default RowImageText

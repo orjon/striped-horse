@@ -1,4 +1,5 @@
 @import 'Variables.scss';
+@import 'Grid.scss';
 
 section {
   border: $devBorder solid lime;
@@ -25,7 +26,8 @@ section {
 
   .Card {
     height: 100%;
-    max-width: 400px;
+    background-color: $colorBackground;
+    // max-width: 400px;
     box-shadow: 0px 0px $navShadowBlur $colorCardShadow;
   }
 

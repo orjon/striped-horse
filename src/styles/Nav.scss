@@ -15,32 +15,15 @@ $navBorder: 0px solid rgb(0, 129, 199);
   position: fixed;
   top: 0;
   z-index: 10;
+  background-color: $colorBackground;
   display: flex;
   flex-direction: row;
-  // padding: 10px;
-  background-color: white;
   border: $devBorder solid blue;
   height: $navHeight;
-  // border-bottom: 1px solid $colorNavShadow;
   box-shadow: 0px 0px $navShadowBlur $colorNavShadow;
-
-  .Logo {
-    border: $devBorder solid cyan;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 1.5pt;
-    .LogoImage {
-      height: 40px;
-      margin-right: 10px;
-    }
-  }
 
   .navIcon, .navItem {
     cursor: pointer;
-    margin: 5px;
     color: $colorNavItem;
     :hover {
       color: $colorNavItemSelected;
@@ -57,7 +40,8 @@ $navBorder: 0px solid rgb(0, 129, 199);
   .navItem {
     text-transform: uppercase;
     letter-spacing: 1.5pt;
-    font-size: 10pt;
+    font-size: 0.85rem;
+    // font-size: 10pt;
     text-decoration: none;
     }
 
@@ -74,12 +58,9 @@ $navBorder: 0px solid rgb(0, 129, 199);
 
   .burgerMenuList {
     box-shadow: 0px 0px $navShadowBlur $colorNavShadow;
-    // background-color: $colorNavBurgerBackground;
     background-color: white;
     position: fixed;
-    // top: $navHeight;
     top: 0px;
-    // padding-top: $navHeight;
     right: 0px;
     display: flex;
     flex-direction: column;

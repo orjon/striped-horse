@@ -25,7 +25,7 @@ class Home extends Component {
       return(
         <div className='Home'>
   
-          <div className='image04 h80 flexColumn spread'>
+          <div className='image01 h60 flexColumn spread'>
             <div className='overlayTop'>
               {/* <SectionTitle title='Home' overlay={true}/> */}
             </div>

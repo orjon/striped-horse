@@ -40,11 +40,11 @@ class NavBurgerMenu extends Component {
     return (
       <div className='burgerMenu' >
         {menuOpen? 
-          <div className='navIcon'><IconClose onClick={this.handleClick}/></div>
+          <div className='navIcon gap10'><IconClose onClick={this.handleClick}/></div>
            :
-           <div className='navIcon'><IconNavBurger onClick={this.handleClick}/></div>}
+           <div className='navIcon gap10'><IconNavBurger onClick={this.handleClick}/></div>}
         {menuOpen? 
-          <div className='burgerMenuList gap10' onClick={this.handleClick}>
+          <div className='burgerMenuList gap20' onClick={this.handleClick}>
             <div className='navIcon indent10'><IconClose onClick={this.handleClick}/></div>
             <div className='navItem indent40'>
               {navItems}

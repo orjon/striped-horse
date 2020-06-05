@@ -43,7 +43,7 @@ class About extends Component {
             <h2  className='w100'>Ad iure odio At necessitatibus omnis enim nam eligendi aspernatur aut nesciunt</h2>
           </div> */}
         {/* </div> */}
-        <p className='textJustify w100'>
+        <p className='textSize0 textJustify w100'>
           <img src={require('../images/about/CharlesThomas01.jpg')} alt='Charles Thomas' className='charles w50 left' />
           Charles Thomas is the founder and managing director of Striped Horse Resources Ltd. He has previously held international business development and leadership roles with EMGS ASA and Halliburton, where he spent 17 years working and living in various African locations including Lagos, Luanda, Cairo and Cape Town. In his early career, Charles spent two years as an offshore engineer with Halliburton Energy Services working in West Africa.<br /><br /> Charles graduated from the University of Liverpool with a joint honors degree in Physical Geology and Geomorphology (1994). He also holds a master’s degree in Petroleum Geoscience from Imperial College, London (1995). With 25 years of continuous industry experience, Charles has been involved in a wide variety of technical &amp; commercial upstream projects throughout Africa and has long established relationships with key African NOC’s, Ministries and Regulators.<br /><br />He declares himself an advocate of seeing life as an adventure. Each adventure is a chance to take in the view, change your thinking, learn something, explore the world, meet like-minded people &amp; have fun.
         </p>

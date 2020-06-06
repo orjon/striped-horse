@@ -41,34 +41,33 @@ class App extends Component{
                 path='/test/about'
                 component = { About }
                 // render={(routeProps) => ( <About {...routeProps}/>)}
-              />
+                />
 
               <Route
                 exact
                 path='/test/services'
                 component = { Services }
                 // render={(routeProps) => (<Services {...routeProps}/>)}
-              />
+                />
               <Route
                 exact
                 path='/test/partners'
                 component = { Partners }
-              />
+                />
               <Route
                 exact
                 path='/test/ethics'
                 component = { Ethics }
-              />
-                            <Route
+                />
+              <Route
                 exact
                 path='/test/templates'
-                component = { Templates}
-              />
+                component = { Templates}/>
               <Route
                 exact
                 path='/test/contact'
                 component = { Contact }
-              />
+                />
           </Switch>
 
         </section>

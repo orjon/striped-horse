@@ -17,7 +17,7 @@ class Nav extends Component {
         'partners',
         'about',
         'ethics',
-        // 'templates',
+        'templates',
         'contact'
       ]
     }

@@ -6,7 +6,6 @@ import '../styles/SlideShow.scss';
 class SlideShow extends Component{
 
   render(){
-    // const slideNumbers = ['A01','A02','A03']
 
     let slideFiles = this.props.slides
  

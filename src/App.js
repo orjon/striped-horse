@@ -7,6 +7,7 @@ import Services from './Components/Services';
 import Partners from './Components/Partners';
 import Contact from './Components/Contact';
 import Ethics from './Components/Ethics';
+import Templates from './Components/Templates';
 import './styles/App.scss';
 
 
@@ -57,6 +58,11 @@ class App extends Component{
                 exact
                 path='/test/ethics'
                 component = { Ethics }
+              />
+                            <Route
+                exact
+                path='/test/templates'
+                component = { Templates}
               />
               <Route
                 exact

@@ -1,14 +1,40 @@
 @import 'Variables.scss';
+@import 'Section.scss';
 
-p {
-  border: $devBorder solid #DDD;
- 
+.About {
+  p {
+    border: $devBorder solid #DDD;
+    // background-color: green;
+
+  }
+
   img {
-    width: 400px;
-    max-width: 450px;
+    max-width: 100%;
     min-width: 350px;
+
   &.left {
-      float: left;
-      padding: 0 20px 20px 0;}
+    float: left;
+    padding: 0 20px 20px 0;}
+  &.right {
+    float: right;
+    padding: 20px 0 20px 0;}
+  }
+
+  .normal {
+    display:none;
+  }
+
+  @media only screen and (min-width: $breakPoint0) {
+    img {
+      max-width: 30%;
+    }
+    .small {
+      display: none;
+    }
+
+    .normal {
+      display: block;
+    }
   }
 }
+

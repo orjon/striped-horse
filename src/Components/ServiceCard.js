@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../styles/BlockImageText.scss';
+import '../styles/ServiceCard.scss';
 
 
 
-class BlockImageText extends Component {
+class ServiceCard extends Component {
   render(){
     let { title, titleAlign, text, image, width, link, orientation, alignment } = this.props
 
@@ -15,9 +15,9 @@ class BlockImageText extends Component {
 
 
     return(
-      <div className={`BlockImageText h0 indent20 gap20 flexColumn middle ${width}`}>
+      <div className={`ServiceCard h0 w100 indent20 gap20 flexColumn middle ${width}`}>
  
-        <div className={`Card ${orientation} ${alignment} indent20 gap40`}>
+        <div className={`Card ${orientation} ${alignment} w100 indent20 gap40`}>
         
 
           <a href={link} target='_blank' rel='noopener noreferrer'>
@@ -26,8 +26,8 @@ class BlockImageText extends Component {
 
           <a href={link} target='_blank' rel='noopener noreferrer'>
             <div className={'textBlock flexColumn textSize1'}>
-              <strong className={`gap10 textSize2${titleAlign}`}>{title}</strong>
-              <p className='textJustify textSize3'>{text}</p>
+              <strong className={`gap10 ${titleAlign}`}>{title}</strong>
+              <p className='textJustify textSize2'>{text}</p>
             </div>
           </a>
           
@@ -38,4 +38,4 @@ class BlockImageText extends Component {
   }
 }
 
-export default BlockImageText
+export default ServiceCard

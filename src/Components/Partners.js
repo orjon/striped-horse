@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Section.scss';
+import '../styles/Partners.scss';
 import { default as PartnerBlock }  from './BlockImageText';
 import NavToTop from './NavToTop';
 import SectionTitle from './SectionTitle';
@@ -62,11 +62,6 @@ class Partners extends Component {
       <div className='Partners'>
         <SectionTitle title='Our Partners' />
 
-        {/* <div className='flexColumn textBlock indent40 gap10'>
-          <p  className='textSize1'>Aut consequatur voluptate et aperiam minima est nihil cumque. Rem rerum recusandae ut quas labore sit libero quasi! Aut vitae iste et modi dolor id ratione voluptatem sit quia mollitia aut voluptas dolor 33 modi deleniti.</p>
-          <br />
-          <p  className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi. Et Quis obcaecati aut labore voluptatem eos voluptas velit.</p>
-        </div> */}
 
         <div className='flexColumn indent40'>
 

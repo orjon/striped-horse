@@ -2,16 +2,20 @@
 
 $navBorder: 0px solid rgb(0, 129, 199);
 
+
+
 .navTextLink {
   border: $devBorder solid cyan;
   cursor: pointer;
   color: $colorNavItem;
-  :hover {
+  &:hover {
     color: $colorNavItemSelected;
   }
 }
 
 .Nav {
+
+
   position: fixed;
   top: 0;
   z-index: 10;
@@ -100,7 +104,7 @@ $navBorder: 0px solid rgb(0, 129, 199);
 
 
 /* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $breakPoint2) {
   .Nav {
     .navBurger {
       display: none;

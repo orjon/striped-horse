@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Section.scss';
-// import NavToTop from './NavToTop';
+import '../styles/Home.scss';
 import '../styles/Nav.scss';
 
 
@@ -35,12 +34,12 @@ class Home extends Component {
           </div>
 
           <div className='flexColumn textBlock indent40 gap40'>
-            <h3 className='textJustify'>
-              Striped Horse Resources Limited was established in 2018 &amp; is an international upstream consultancy company focused on the African market. Its focus &amp; business philosophy is always to be optimistic, seek mutual value and win-win outcomes for all customers, stakeholders, partners &amp; investors.
-            </h3>
-            <h4 className='w100 flexRow right'>
-              <Link to={`/test/about`} className='navTextLink'>Read more...</Link>
-            </h4>
+            <div className='textSize0'>
+              <strong>Striped Horse Resources Limited</strong> was established in 2018 &amp; is an international upstream consultancy company focused on the African market. Its focus &amp; business philosophy is always to be optimistic, seek mutual value and win-win outcomes for all customers, stakeholders, partners &amp; investors.
+            </div>
+            <div className='textSize0 w100 flexRow right'>
+              <Link to={`/test/about`} className='navTextLink'>read more...</Link>
+            </div>
 
           </div>
   

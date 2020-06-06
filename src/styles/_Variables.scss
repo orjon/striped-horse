@@ -1,7 +1,9 @@
 $devBorder: 0px;
 
-$breakPoint1: 980px;
-$breakPoint2: 1385px;
+$breakPoint0: 640px;
+$breakPoint1: 700px;
+$breakPoint2: 1100px;
+$breakPoint3: 1400px;
 
 $navHeight: 68px;
 $navShadowBlur: 10px;
@@ -172,46 +174,89 @@ $textShadowColor: rgba(0,0,0,0.75);
   hyphens: auto;
 }
 
+
+
 h1 {
   border: $devBorder solid #999;
-  font-size: 40pt;
+  font-size: 35pt;
   text-transform: uppercase;
 }
 
 h2 {
   border: $devBorder solid #999;
-  font-size: 35pt;
+  font-size: 20pt;
   letter-spacing: 1.5pt;
+
 }
 
 h3 {
   border: $devBorder solid #999;
-  font-size: 25pt;
+  font-size: 15pt;
 }
 
 h4 {
   border: $devBorder solid #999;
-  font-size: 20pt;
+  font-size: 10pt;
 }
 
 .textSize0 {
-  font-size: 14pt;
+  font-size: 15pt;
   text-align: justify;
 }
 
 .textSize1 {
-  font-size: 12pt;
-  text-align: justify;
-}
-
-.textSize2 {
   font-size: 13pt;
   text-align: justify;
 }
 
-.textSize3 {
+.textSize2 {
   font-size: 12pt;
   text-align: justify;
+}
+
+.textSize3 {
+  font-size: 10pt;
+  text-align: justify;
+}
+
+@media only screen and (min-width: $breakPoint1) {
+  color:red;
+
+  &h1 {
+    font-size: 40pt;
+    text-transform: uppercase;
+  }
+
+  &h2 {
+    font-size: 25pt;
+  }
+
+  &h3 {
+    font-size: 20pt;
+  }
+
+  &h4 {
+    font-size: 15pt;
+  }
+}
+
+@media only screen and (min-width: $breakPoint2) {
+  &.textSize0 {
+    font-size: 18pt;
+  }
+  
+  &.textSize1 {
+    font-size: 15pt;
+    
+  }
+  
+  &.textSize2 {
+    font-size: 13pt;
+  }
+  
+  &.textSize3 {
+    font-size: 12pt;
+  }
 }
 
 // p {

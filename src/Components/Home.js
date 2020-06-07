@@ -38,7 +38,7 @@ class Home extends Component {
               <strong>Striped Horse Resources Limited</strong> was established in 2018 &amp; is an international upstream consultancy company focused on the African market. Its focus &amp; business philosophy is always to be optimistic, seek mutual value and win-win outcomes for all customers, stakeholders, partners &amp; investors.
             </div>
             <div className='textSize0 w100 flexRow right'>
-              <Link to={`/test/about`} className='navTextLink'>read more...</Link>
+              <Link to={`/test2/about`} className='navTextLink'>read more...</Link>
             </div>
 
           </div>

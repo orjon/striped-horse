@@ -10,7 +10,8 @@
 
   img {
     max-width: 100%;
-    min-width: 350px;
+    max-width: 450px;
+
 
   &.left {
     float: left;
@@ -25,8 +26,9 @@
   }
 
   @media only screen and (min-width: $breakPoint0) {
+    min-width: 350px;
     img {
-      max-width: 30%;
+      max-width: 450px;
     }
     .small {
       display: none;

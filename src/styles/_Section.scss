@@ -35,21 +35,21 @@ section {
 
 
   .image01{ 
-    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/Services01.jpg');
+    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/placeholder/Services01.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
   .image02{ 
-    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/OilRig.jpg');
+    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/placeholder/OilRig.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
   .image03{ 
-    background: url('../images/OilRig.jpg');
+    background: url('../images/placeholder/OilRig.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@ section {
 
   .image04{ 
     align-content: stretch;
-    background: url('../images/OilRig2sml.jpg');
+    background: url('../images/placeholder/OilRig2sml.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,7 +65,7 @@ section {
 
   .image-oilrig3{ 
     align-content: stretch;
-    background: url('../images/OilRig3.jpg');
+    background: url('../images/placeholder/OilRig3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +73,7 @@ section {
 
   .image-3d{ 
     align-content: stretch;
-    background: url('../images/3dsml.jpg');
+    background: url('../images/placeholder/3dsml.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -82,7 +82,7 @@ section {
 
   .image-pipes{ 
     align-content: stretch;
-    background: url('../images/pipes.png');
+    background: url('../images/placeholder/pipes.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -92,7 +92,7 @@ section {
 
   .image-pumps{ 
     // align-content: stretch;
-    background: url('../images/pumps.jpg');
+    background: url('../images/placeholder/pumps.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

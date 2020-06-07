@@ -26,7 +26,7 @@ class SlideShow extends Component{
     let slides = slideFiles.map(image => 
       <div key={image} className="each-fade">
           <div className="image-container">
-            <img className='slide show' src={require(`../images/slideImages/${image}.jpg`)} alt=''/>
+            <img className='slide show' src={require(`../images/placeholder/${image}.jpg`)} alt=''/>
           </div>
       </div>
     )

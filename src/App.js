@@ -16,6 +16,8 @@ import './styles/App.scss';
 class App extends Component{
   render(){
 
+    let pathRoot = '/test2/'
+
     return (
       <div className='App'>
         <Nav />
@@ -23,14 +25,14 @@ class App extends Component{
           <Switch>
             <Route
               exact
-              path='/test/'
+              path={pathRoot}
               component = { Home }
               // render={(routeProps) => ( <Home {...routeProps} /> )}
             />
 
             <Route
               exact
-              path='/test/home'
+              path={`${pathRoot}home`}
               component = { Home }
               // render={(routeProps) => ( <Home {...routeProps} /> )}
             /> 
@@ -38,34 +40,34 @@ class App extends Component{
 
               <Route
                 exact
-                path='/test/about'
+                path={`${pathRoot}about`}
                 component = { About }
                 // render={(routeProps) => ( <About {...routeProps}/>)}
                 />
 
               <Route
                 exact
-                path='/test/services'
+                path={`${pathRoot}services`}
                 component = { Services }
                 // render={(routeProps) => (<Services {...routeProps}/>)}
                 />
               <Route
                 exact
-                path='/test/partners'
+                path={`${pathRoot}partners`}
                 component = { Partners }
                 />
               <Route
                 exact
-                path='/test/ethics'
+                path={`${pathRoot}ethics`}
                 component = { Ethics }
                 />
               <Route
                 exact
-                path='/test/templates'
+                path={`${pathRoot}templates`}
                 component = { Templates}/>
               <Route
                 exact
-                path='/test/contact'
+                path={`${pathRoot}contact`}
                 component = { Contact }
                 />
           </Switch>

@@ -19,16 +19,14 @@ class Services extends Component {
 
         <SectionTitle title='Services' overlay={false}/>
 
-        <div className='flexColumn textBlock indent40 gap10'>
+        <div className='flexColumn textBlock indent40'>
         
           <p className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis ad iure odio At necessitatibus omnis eos quia dolores ab maiores commodi et modi sapiente qui necessitatibus voluptatem. Et Quis obcaecati aut labore voluptatem eos voluptas velit. Vlanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi.</p>
         </div> 
 
-        <div className='flexRow flexWrap indent40 gap10'>
-        {/* <div className='gridContainer textBlock indent40 gap20'> */}
+        <div className='flexRow flexWrap indent20 gap10'>
 
           <ServiceCard
-            // width='w50'
             orientation='flexColumn'
             alignment='middle'
             titleAlign='textCenter'
@@ -37,7 +35,6 @@ class Services extends Component {
             text='With years of proven experience throughout Africa, we offer a full range of BD and sales &amp; marketing services to customers looking to expand their own range of services and products into Africa.'/>
 
           <ServiceCard
-            // width='w50'
             orientation='flexColumn'
             alignment='middle'
             titleAlign='textCenter'
@@ -46,7 +43,6 @@ class Services extends Component {
             text='Services specifically tailored to emerging and/or established local agents &amp; local content service providers based in Africa looking to expand and/or manage their own portfolio of  partner representation. This takes into account Geopolitical fluctuations, technical developments and the evolution of the oil field life cycle through time.'/>
 
           <ServiceCard 
-            // width='w50'
             orientation='flexColumn'
             alignment='middle'
             titleAlign='textCenter'
@@ -55,7 +51,6 @@ class Services extends Component {
             text='Services associated with licensing round support and advisory to industry regulators, Ministries and National Oil Companies looking to host successful licensing round promotions.'/>
 
           <ServiceCard 
-            // width='w50'
             orientation='flexColumn'
             alignment='middle'
             titleAlign='textCenter'

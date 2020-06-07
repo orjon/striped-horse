@@ -17,7 +17,7 @@ class Nav extends Component {
         'partners',
         'about',
         'ethics',
-        'templates',
+        // 'templates',
         'contact'
       ]
     }
@@ -33,7 +33,7 @@ class Nav extends Component {
     return(
       <nav className='Nav w100 indent10 gap10'>
         {/* <ComponentSize /> */}
-        <Logo />
+        <Logo linkTo='/test2/'/>
         <div className='navItems'>
           {navItems}
           <div className='contactItems'>

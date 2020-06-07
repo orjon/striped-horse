@@ -1,27 +1,24 @@
-
 @import 'Variables.scss';
 
 .ServiceCard {
-  // position: relative;
   border: $devBorder solid lime;
 
-  // flex-grow: 1;
-  width: 50%;
-
-
-
   flex-basis: 100%;
-  @media only screen and (min-width: $breakPoint1) {
+  @media only screen and (min-width: $breakPointA) {
     flex-basis: 50%;
   }
-  @media only screen and (min-width: $breakPoint2) {
+  @media only screen and (min-width: $breakPointB) {
     flex-basis: 33.3%;
+  }
+
+  @media only screen and (min-width: $breakPointC) {
+    flex-basis: 25%;
   }
 
 
 
   .BlockImage {
-    $BlockImageSize: 250px;
+    $BlockImageSize: 200px;
     max-height: $BlockImageSize;
     border: $devBorder solid purple;
   }
@@ -38,19 +35,3 @@
   }
 }
 
-
-// img{
-//   max-width: 100%;
-//   height: $iconProject;
-//   transition-timing-function: ease-out;
-//   -webkit-transition: height .15s; /* For Safari 3.1 to 6.0 */
-//   transition: height .15s;
-//   &:hover {
-//     max-width: 100%;
-//     height: $iconProjectHover;
-//     transition-timing-function: ease-out;
-//     -webkit-transition: height .1s; /* For Safari 3.1 to 6.0 */
-//     transition: height .1s;
-//   } $iconProject: 70%;
-//   $iconProjectHover: $iconProject + 15%;
-// }

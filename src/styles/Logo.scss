@@ -10,6 +10,10 @@
   .LogoImage {
     height: 40px;
     margin-right: 10px;
+    display: none;
+    @media only screen and (min-width: 425px) {
+      display: block;
+    }
   }
   .LogoText {
     text-transform: uppercase;

@@ -5,12 +5,9 @@ class NavItem extends Component {
   render(){
     let location = this.props.to
 
-    // if (location === 'home') {
-    //   location = ''
-    // }
 
     return(
-      <NavLink to={`/test/${location}`} className='navItem indent10' activeClassName='selected'>
+      <NavLink to={`/test2/${location}`} className='navItem indent10' activeClassName='selected'>
         <div>{this.props.to}</div>
       </NavLink>
     )

@@ -15,13 +15,13 @@ class ServiceCard extends Component {
 
 
     return(
-      <div className={`ServiceCard h0 w100 indent20 gap20 flexColumn middle ${width}`}>
+      <div className={`ServiceCard w100 indent20 gap20 flexColumn middle ${width}`}>
  
         <div className={`Card ${orientation} ${alignment} w100 indent20 gap40`}>
         
 
-          <a href={link} target='_blank' rel='noopener noreferrer'>
-            <img className='BlockImage indent20' src={imagePath} alt={`${title} logo`}/>
+          <a href={link} target='_blank' rel='noopener noreferrer' className=''>
+            <img className='BlockImage' src={imagePath} alt={`${title} logo`}/>
           </a>
 
           <a href={link} target='_blank' rel='noopener noreferrer'>

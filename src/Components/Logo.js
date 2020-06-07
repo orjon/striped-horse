@@ -4,10 +4,15 @@ import { NavLink } from 'react-router-dom';
 import '../styles/Logo.scss';
 
 class Logo extends Component {
+
+
   render(){
+
+    let { linkTo } = this.props
+    
     return(
       <div className='Logo'>
-        <NavLink to={`/test/`} className='navItem' activeClassName='selected'>
+        <NavLink to={linkTo} className='navItem' activeClassName='selected'>
           <div className='flexRow center'>
             <img className='LogoImage' src={LogoImage} alt='Striped Horse Resource Logo'/>
             <div className='LogoText'>Striped Horse Resources ltd</div>

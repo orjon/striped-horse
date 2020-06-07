@@ -2,8 +2,13 @@ $devBorder: 0px;
 
 $breakPoint0: 640px;
 $breakPoint1: 700px;
-$breakPoint2: 1100px;
+$breakPoint2: 1000px;
 $breakPoint3: 1400px;
+
+$breakPointA: 700px;
+$breakPointB: 1100px;
+$breakPointC: 1600px;
+
 
 $navHeight: 68px;
 $navShadowBlur: 10px;
@@ -75,6 +80,7 @@ $textShadowColor: rgba(0,0,0,0.75);
   }
   &.middle {
     align-items: center;
+    justify-content: center;
   }
   &.top {
     // align-items: flex-start;

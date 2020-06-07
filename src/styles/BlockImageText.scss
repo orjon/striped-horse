@@ -1,4 +1,3 @@
-
 @import 'Variables.scss';
 
 .BlockImageText {
@@ -12,17 +11,17 @@
 
 
   flex-basis: 100%;
-  @media only screen and (min-width: $breakPoint1) {
+  @media only screen and (min-width: $breakPointA) {
     flex-basis: 50%;
   }
-  @media only screen and (min-width: $breakPoint2) {
+  @media only screen and (min-width: $breakPointB) {
     flex-basis: 33.3%;
   }
 
 
 
   .BlockImage {
-    $BlockImageSize: 250px;
+    $BlockImageSize:300px;
     max-height: $BlockImageSize;
     border: $devBorder solid purple;
   }

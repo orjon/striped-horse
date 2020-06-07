@@ -16,7 +16,7 @@ class Ethics extends Component {
 
         <SectionTitle title='Ethics' />
 
-        <div className='textBlock center w100 gap10'>
+        <div className='textBlock center w100'>
 
 
           <div className='small flexColumn center textSize1 indent40 textJustify '>

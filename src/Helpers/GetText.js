@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 
 class GetText extends Component {
@@ -16,7 +16,9 @@ class GetText extends Component {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status === 0) {
                 var allText = rawFile.responseText;
-                console.log("allText: ", allText);
+                // console.log("GotText: ", allText);
+                // var arr = allText.split('/')
+                // console.log("split: ", ...arr);
                 this.setState({
                     text: allText
                 });

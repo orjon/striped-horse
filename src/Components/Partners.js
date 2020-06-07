@@ -12,7 +12,7 @@ class Partners extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
   }
-
+  
 
   render(){
 
@@ -20,7 +20,6 @@ class Partners extends Component {
     return(
       <div className='Partners'>
         <SectionTitle title='Our Partners' />
-
 
         <div className='flexColumn indent40'>
 

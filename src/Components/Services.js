@@ -19,12 +19,12 @@ class Services extends Component {
 
         <SectionTitle title='Services' overlay={false}/>
 
-        <div className='flexColumn textBlock indent40'>
+        <div className='flexColumn textBlock indent20 gap10'>
         
           <p className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis ad iure odio At necessitatibus omnis eos quia dolores ab maiores commodi et modi sapiente qui necessitatibus voluptatem. Et Quis obcaecati aut labore voluptatem eos voluptas velit. Vlanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi.</p>
         </div> 
 
-        <div className='flexRow flexWrap indent20 gap10'>
+        <div className='flexRow flexWrap indent40 gap10'>
 
           <ServiceCard
             orientation='flexColumn'

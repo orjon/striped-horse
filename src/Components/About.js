@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SectionTitle from './SectionTitle';
-import NavToTop from './NavToTop';
+import NavToTop from './Nav/NavToTop';
 import '../styles/About.scss'
 
 

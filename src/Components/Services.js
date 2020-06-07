@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/Services.scss';
 import SectionTitle from './SectionTitle';
 import SectionSubTitle from './SectionSubTitle';
-import NavToTop from './NavToTop';
+import NavToTop from './Nav/NavToTop';
 // import BlockImageText  from './BlockImageText';
 import ServiceCard  from './ServiceCard';
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SectionTitle from './SectionTitle';
-// import NavToTop from './NavToTop';
 import { default as IconEmail}  from '@material-ui/icons/EmailOutlined';
 import { default as IconPhone} from '@material-ui/icons/Call';
 

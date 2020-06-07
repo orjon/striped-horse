@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SlideShow from './SlideShow';
 import SectionTitle from './SectionTitle';
 import SectionSubTitle from './SectionSubTitle';
-import NavToTop from './NavToTop';
+import NavToTop from './Nav/NavToTop';
 import BlockImageText from './BlockImageText';
 
 class Templates extends Component {

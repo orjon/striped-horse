@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LogoImage from '../images/logo/StripedHorseResources_LogoSML.png';
+import LogoImage from '../../images/logo/StripedHorseResources_LogoSML.png';
 import { NavLink } from 'react-router-dom';
-import '../styles/Logo.scss';
+import '../../styles/Logo.scss';
 
 class Logo extends Component {
 

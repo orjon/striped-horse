@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import '../styles/Partners.scss';
 import { default as PartnerBlock }  from './BlockImageText';
-import NavToTop from './NavToTop';
+import NavToTop from './Nav/NavToTop';
 import SectionTitle from './SectionTitle';
 import SectionSubTitle from './SectionSubTitle';
+import GetText from '../Helpers/GetText';
 
 
 class Partners extends Component {
@@ -12,50 +13,11 @@ class Partners extends Component {
     window.scrollTo(0, 0)
   }
 
-  // constructor(props){
-  //   super(props);
-  //   this.state={
-  //     text1: '',
-  //     text2:''
-  //   }
-  // }
 
-  // async readTextFile(file) {
-  //   var rawFile = await new XMLHttpRequest();
-  //   rawFile.open("GET", file, false);
-  //   rawFile.onreadystatechange = () => {
-  //       if (rawFile.readyState === 4) {
-  //           if (rawFile.status === 200 || rawFile.status === 0) {
-  //               var allText = rawFile.responseText;
-  //               // console.log("allText: ", allText);
-  //               this.setState({
-  //                   text1: allText
-  //               });
-  //               // console.log('TEXT 1:', allText)
-  //           }
-  //       }
-  //   };
-  //   rawFile.send(null);
-  // }
-
-  // fetchTextFile(file) {
-  //     fetch(file)
-  //       // .then(response => response.json())
-  //       .then(text2 => this.setState({ text2 }));
-  //   }
 
 
   render(){
 
-    // if (this.state.text1 ===''){
-    //   this.readTextFile("./textFiles/page1.txt");
-    //   console.log('TEXT 1:', this.state.text1)
-    // }
-
-    // if (this.state.text2 ===''){
-    //   this.fetchTextFile("./textFiles/page1.txt");
-    //   console.log('TEXT 2:', this.state.text2)
-    // }
 
    
     return(
@@ -73,7 +35,7 @@ class Partners extends Component {
             titleAlign='textLeft'
             image='partners/EMGS.png'
             title='EMGS ASA'
-            text='ElectroMagnetic Geoservices (EMGS ASA) is an Oslo based market leader in the acquisition, processing, imaging and interpretation of marine CSEM data. When integrated with other Geophysical data, such as seismic, CSEM provides for an updated probability of success and volumetric estimation in pre-drill and post-drill settings. To date the company has acquired over 900 commercial surveys and has an extensive multi-client data library in strategic basins around the world.'
+            text={<GetText partner='emgs'/>}
           />
 
           <PartnerBlock
@@ -84,7 +46,7 @@ class Partners extends Component {
             titleAlign='textLeft'
             image='partners/NVentures.jpg'
             title='NVentures'
-            text='NVentures is a UK based upstream exploration firm specialising in technical and commercial intelligence for explorationists. The firm delivers high quality, comprehensive data and reports to oil and service companies worldwide.'
+            text={<GetText partner='nventures'/>}
           />
 
           <PartnerBlock
@@ -95,7 +57,7 @@ class Partners extends Component {
             titleAlign='textLeft'
             image='partners/PromoteEnergy.jpg'
             title='Promote Energy'
-            text='Promote Energy is a Cairo based consultancy and advisory company with a vision to play a key role in the future of energy in Egypt and beyond.'
+            text={<GetText partner='promoteEnergy'/>}
           />
           <PartnerBlock
             orientation='flexRow'
@@ -105,7 +67,7 @@ class Partners extends Component {
             titleAlign='textLeft'
             image='partners/PVE.png'
             title='PVE Consulting'
-            text='PVE Consulting is a UK based international advisory consulting firm for the upstream E&amp;P sector. The firm is engaged with a number of E&amp;P companies across Africa and other regions, with high level mandates in transaction support and exploration campaigns.'
+            text={<GetText partner='pveConsulting'/>}
           />
         </div>
 
@@ -123,7 +85,7 @@ class Partners extends Component {
             titleAlign='textCenter'
             image='partners/EMGS.png'
             title='EMGS ASA'
-            text='ElectroMagnetic Geoservices (EMGS ASA) is an Oslo based market leader in the acquisition, processing, imaging and interpretation of marine CSEM data. When integrated with other Geophysical data, such as seismic, CSEM provides for an updated probability of success and volumetric estimation in pre-drill and post-drill settings. To date the company has acquired over 900 commercial surveys and has an extensive multi-client data library in strategic basins around the world.'
+            text={<GetText partner='emgs'/>}
           />
 
           <PartnerBlock
@@ -134,7 +96,7 @@ class Partners extends Component {
             titleAlign='textCenter'
             image='partners/NVentures.jpg'
             title='NVentures'
-            text='NVentures is a UK based upstream exploration firm specialising in technical and commercial intelligence for explorationists. The firm delivers high quality, comprehensive data and reports to oil and service companies worldwide.'
+            text={<GetText partner='nventures'/>}
           />
 
           <PartnerBlock
@@ -145,7 +107,7 @@ class Partners extends Component {
             titleAlign='textCenter'
             image='partners/PromoteEnergy.jpg'
             title='Promote Energy'
-            text='Promote Energy is a Cairo based consultancy and advisory company with a vision to play a key role in the future of energy in Egypt and beyond.'
+            text={<GetText partner='promoteEnergy'/>}
           />
           <PartnerBlock
             orientation='flexColumn'
@@ -155,7 +117,7 @@ class Partners extends Component {
             titleAlign='textCenter'
             image='partners/PVE.png'
             title='PVE Consulting'
-            text='PVE Consulting is a UK based international advisory consulting firm for the upstream E&amp;P sector. The firm is engaged with a number of E&amp;P companies across Africa and other regions, with high level mandates in transaction support and exploration campaigns.'
+            text={<GetText partner='pveConsulting'/>}
           />
         </div>
 

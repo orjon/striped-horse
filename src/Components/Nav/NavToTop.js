@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ScrollTop from './ScrollTop';
-import '../styles/Nav.scss';
+import ScrollTop from '../ScrollTop';
+import '../../styles/Nav.scss';
 
 
 

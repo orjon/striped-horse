@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
 import NavItem from './NavItem';
-import '../styles/Nav.scss';
+import '../../styles/Nav.scss';
 import { default as IconEmail}  from '@material-ui/icons/EmailOutlined';
 import { default as IconPhone} from '@material-ui/icons/Call';
 import NavBurgerMenu from './NavBurgerMenu';

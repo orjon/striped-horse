@@ -27,7 +27,7 @@ class Nav extends Component {
     let { navLocations} = this.state
 
     let navItems = navLocations.map(location => 
-      <NavItem key={location} to={location}/>
+      <NavItem key={location} label={location}/>
     )
 
     return(

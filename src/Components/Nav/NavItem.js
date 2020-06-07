@@ -3,12 +3,18 @@ import { NavLink } from 'react-router-dom';
 
 class NavItem extends Component {
   render(){
-    let location = this.props.to
+    let { label }  = this.props
+
+    let to = label
+
+    if (label === 'home'){
+      to = ''
+    }
 
 
     return(
-      <NavLink to={`/test2/${location}`} className='navItem indent10' activeClassName='selected'>
-        <div>{this.props.to}</div>
+      <NavLink exact to={`/${to}`} className='navItem indent10' activeClassName='selected'>
+        <div>{label}</div>
       </NavLink>
     )
   }

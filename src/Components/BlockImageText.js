@@ -21,7 +21,7 @@ class BlockImageText extends Component {
         
 
           <a href={link} target='_blank' rel='noopener noreferrer'>
-            <img className='BlockImage indent20' src={imagePath} alt={`${title} logo`}/>
+            <img className='w50 indent20' src={imagePath} alt={`${title} logo`}/>
           </a>
 
           <a href={link} target='_blank' rel='noopener noreferrer'>

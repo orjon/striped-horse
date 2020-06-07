@@ -3,7 +3,6 @@ import '../styles/Services.scss';
 import SectionTitle from './SectionTitle';
 import SectionSubTitle from './SectionSubTitle';
 import NavToTop from './Nav/NavToTop';
-// import BlockImageText  from './BlockImageText';
 import ServiceCard  from './ServiceCard';
 
 
@@ -20,7 +19,6 @@ class Services extends Component {
         <SectionTitle title='Services' overlay={false}/>
 
         <div className='flexColumn textBlock indent20 gap10'>
-        
           <p className='textSize1'>Ea nostrum expedita ab saepe odio ut nobis voluptates sit sequi tempora vel modi ipsum eum laborum nemo? Ut asperiores animi aut ullam blanditiis ad iure odio At necessitatibus omnis eos quia dolores ab maiores commodi et modi sapiente qui necessitatibus voluptatem. Et Quis obcaecati aut labore voluptatem eos voluptas velit. Vlanditiis rem officia quod ex saepe iure et dolorem consequatur hic illum cupiditate ea quia eligendi.</p>
         </div> 
 
@@ -59,7 +57,6 @@ class Services extends Component {
             text='We offer a broad range of services associated with the planning &amp; development, commercialization and deliver of bespoke multi-client campaign solutions in Africa. In all cases, we seek to deliver a win-win solution for our customers, government, acquisition contractor &amp; local content providers, key to the successful delivery of multi-client data acquisition projects.'/>
 
           <ServiceCard 
-            // width='third'
             orientation='flexColumn'
             alignment='middle'
             titleAlign='textCenter'
@@ -68,7 +65,6 @@ class Services extends Component {
             text='Services associated with the planning of and management of upstream consulting projects, to facilitate the smooth execution of project scope results, on time and on budget. A key aim is to use the same language and processes in order to promote trust within well-functioning multi-disciplinary teams, common in the upstream sector.'/>
 
           <ServiceCard 
-            // width='third'
             orientation='flexColumn'
             alignment='middle'
             titleAlign='textCenter'
@@ -77,7 +73,6 @@ class Services extends Component {
             text='Tailored offering specifically to African NOC and Regulators looking to embark on multi-year technical onboarding initiatives and services for new-hires. Provides a method to accelerate levels of experience in a carefully designed, bespoke development programs.'/>
 
           <ServiceCard 
-            // width='third'
             orientation='flexColumn'
             alignment='middle'
             titleAlign='textCenter'

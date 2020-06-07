@@ -5,11 +5,7 @@ import '../styles/ServiceCard.scss';
 
 class ServiceCard extends Component {
   render(){
-    let { title, titleAlign, text, image, width, link, orientation, alignment } = this.props
-
-    if (link === undefined) {
-      console.log('Undefined link for:', title)
-    }
+    let { title, titleAlign, text, image, width, orientation, alignment } = this.props
 
     const imagePath = require(`../images/${image}`)
 
@@ -19,18 +15,13 @@ class ServiceCard extends Component {
  
         <div className={`Card ${orientation} ${alignment} w100 indent20 gap40`}>
         
+          <img className='BlockImage' src={imagePath} alt={`${title} logo`}/>
 
-          <a href={link} target='_blank' rel='noopener noreferrer' className=''>
-            <img className='BlockImage' src={imagePath} alt={`${title} logo`}/>
-          </a>
+          <div className={'textBlock flexColumn textSize1'}>
+            <strong className={`gap10 ${titleAlign}`}>{title}</strong>
+            <p className='textJustify textSize2'>{text}</p>
+          </div>
 
-          <a href={link} target='_blank' rel='noopener noreferrer'>
-            <div className={'textBlock flexColumn textSize1'}>
-              <strong className={`gap10 ${titleAlign}`}>{title}</strong>
-              <p className='textJustify textSize2'>{text}</p>
-            </div>
-          </a>
-          
         </div>
 
       </div>

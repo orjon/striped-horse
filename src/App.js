@@ -16,60 +16,53 @@ import './styles/App.scss';
 class App extends Component{
   render(){
 
-    let pathRoot = '/test2/'
 
     return (
       <div className='App'>
         <Nav />
         <section className='flexColumn w100'>
           <Switch>
-            <Route
-              exact
-              path={pathRoot}
-              component = { Home }
-              // render={(routeProps) => ( <Home {...routeProps} /> )}
-            />
 
-            <Route
+
+            {/* <Route
               exact
               path={`${pathRoot}home`}
               component = { Home }
               // render={(routeProps) => ( <Home {...routeProps} /> )}
-            /> 
+            />  */}
 
 
               <Route
-                exact
-                path={`${pathRoot}about`}
+                exact path='/about'
                 component = { About }
                 // render={(routeProps) => ( <About {...routeProps}/>)}
                 />
 
               <Route
-                exact
-                path={`${pathRoot}services`}
+                exact path='/services'
                 component = { Services }
                 // render={(routeProps) => (<Services {...routeProps}/>)}
                 />
               <Route
-                exact
-                path={`${pathRoot}partners`}
+                exact path='/partners'
                 component = { Partners }
                 />
               <Route
-                exact
-                path={`${pathRoot}ethics`}
+                exact path='/ethics'
                 component = { Ethics }
                 />
               <Route
-                exact
-                path={`${pathRoot}templates`}
+                exact path='/templates'
                 component = { Templates}/>
               <Route
-                exact
-                path={`${pathRoot}contact`}
+                exact path='/contact'
                 component = { Contact }
                 />
+                            <Route
+              exact path='/'
+              component = { Home }
+              // render={(routeProps) => ( <Home {...routeProps} /> )}
+            />
           </Switch>
 
         </section>

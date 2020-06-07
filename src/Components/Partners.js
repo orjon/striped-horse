@@ -14,12 +14,9 @@ class Partners extends Component {
   }
 
 
-
-
   render(){
 
 
-   
     return(
       <div className='Partners'>
         <SectionTitle title='Our Partners' />
@@ -34,8 +31,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textLeft'
             image='partners/EMGS.png'
-            title='EMGS ASA'
-            text={<GetText partner='emgs'/>}
+            title={<GetText file='emgsTitle'/>}
+            text={<GetText file='emgs'/>}
           />
 
           <PartnerBlock
@@ -45,8 +42,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textLeft'
             image='partners/NVentures.jpg'
-            title='NVentures'
-            text={<GetText partner='nventures'/>}
+            title={<GetText file='nventuresTitle'/>}
+            text={<GetText file='nventures'/>}
           />
 
           <PartnerBlock
@@ -56,8 +53,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textLeft'
             image='partners/PromoteEnergy.jpg'
-            title='Promote Energy'
-            text={<GetText partner='promoteEnergy'/>}
+            title={<GetText file='promoteEnergyTitle'/>}
+            text={<GetText file='promoteEnergy'/>}
           />
           <PartnerBlock
             orientation='flexRow'
@@ -66,8 +63,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textLeft'
             image='partners/PVE.png'
-            title='PVE Consulting'
-            text={<GetText partner='pveConsulting'/>}
+            title={<GetText file='pveConsultingTitle'/>}
+            text={<GetText file='pveConsulting'/>}
           />
         </div>
 
@@ -84,8 +81,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textCenter'
             image='partners/EMGS.png'
-            title='EMGS ASA'
-            text={<GetText partner='emgs'/>}
+            title={<GetText file='emgsTitle'/>}
+            text={<GetText file='emgs'/>}
           />
 
           <PartnerBlock
@@ -95,8 +92,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textCenter'
             image='partners/NVentures.jpg'
-            title='NVentures'
-            text={<GetText partner='nventures'/>}
+            title={<GetText file='nventuresTitle'/>}
+            text={<GetText file='nventures'/>}
           />
 
           <PartnerBlock
@@ -106,8 +103,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textCenter'
             image='partners/PromoteEnergy.jpg'
-            title='Promote Energy'
-            text={<GetText partner='promoteEnergy'/>}
+            title={<GetText file='promoteEnergyTitle'/>}
+            text={<GetText file='promoteEnergy'/>}
           />
           <PartnerBlock
             orientation='flexColumn'
@@ -116,8 +113,8 @@ class Partners extends Component {
             textAlign='middle'
             titleAlign='textCenter'
             image='partners/PVE.png'
-            title='PVE Consulting'
-            text={<GetText partner='pveConsulting'/>}
+            title={<GetText file='pveConsultingTitle'/>}
+            text={<GetText file='pveConsulting'/>}
           />
         </div>
 

@@ -30,10 +30,10 @@ class GetText extends Component {
 
   render(){
 
-    let  { partner } = this.props
+    let  { file } = this.props
 
     if (this.state.text ===''){
-      this.readTextFile(`./textFiles/partners/${partner}.txt`);
+      this.readTextFile(`./textFiles/partners/${file}.txt`);
     }
     return(
       this.state.text

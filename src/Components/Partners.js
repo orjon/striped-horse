@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import '../styles/Partners.scss';
-// import { default as PartnerBlock }  from './BlockImageText';
 import PartnerCard  from './PartnerCard';
-import NavToTop from './Nav/NavToTop';
 import SectionTitle from './SectionTitle';
-import SectionSubTitle from './SectionSubTitle';
 import GetText from '../Helpers/GetText';
-// import GetTextFile from '../Helpers/GetTextFile';
 
+import '../styles/Partners.scss';
 
 class Partners extends Component {
 
@@ -15,7 +11,6 @@ class Partners extends Component {
     window.scrollTo(0, 0)
   }
   
-
   render(){
 
 
@@ -65,8 +60,6 @@ class Partners extends Component {
           </div>
 
         </div>
-
-        
 
       </div>
     )

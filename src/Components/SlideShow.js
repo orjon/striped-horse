@@ -8,9 +8,10 @@ class SlideShow extends Component{
   render(){
 
     let slideFiles = this.props.slides
+    let { speed, path } = this.props
  
     const fadeProperties = {
-      duration: 5000,
+      duration: speed,
       transitionDuration: 500,
       infinite: true,
       indicators: false,
@@ -21,19 +22,18 @@ class SlideShow extends Component{
       // }
     }
 
-
-
-    let slides = slideFiles.map(image => 
-      <div key={image} className="each-fade">
-          <div className="image-container">
-            <img className='slide show' src={require(`../images/placeholder/${image}.jpg`)} alt=''/>
+    let slides = slideFiles.map(image => {
+      const imagePath = require(`../images/${path}/${image}.jpg`)
+      return <div key={image} className='each-fade'>
+          <div className='image-container'>
+            <img className='slide show' src={imagePath} alt=''/>
           </div>
       </div>
-    )
+      })
 
 
     return (
-      <div className="slide-container">
+      <div className='slide-container wMax450'>
         <Fade {...fadeProperties}>
           {slides}
         </Fade>

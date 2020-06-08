@@ -7,9 +7,8 @@ import Services from './Components/Services';
 import Partners from './Components/Partners';
 import Contact from './Components/Contact';
 import Ethics from './Components/Ethics';
-import Templates from './Components/Templates';
+import NoRoute from './Components/NoRoute';
 import './styles/App.scss';
-
 
 
 // function App() {
@@ -22,15 +21,6 @@ class App extends Component{
         <Nav />
         <section className='flexColumn w100'>
           <Switch>
-
-
-            {/* <Route
-              exact
-              path={`${pathRoot}home`}
-              component = { Home }
-              // render={(routeProps) => ( <Home {...routeProps} /> )}
-            />  */}
-
 
               <Route
                 exact path='/about'
@@ -53,18 +43,19 @@ class App extends Component{
                 />
 
               <Route
-                exact path='/templates'
-                component = { Templates}/>
-
-              <Route
                 exact path='/contact'
                 component = { Contact }
                 />
                 
               <Route
-                  exact path='/'
-                  component = { Home }
-                />
+                exact path='/'
+                component = { Home }
+              />
+
+              <Route
+                path="*"
+                component = { NoRoute }
+              />
           </Switch>
 
         </section>

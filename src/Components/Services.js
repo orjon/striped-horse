@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import GetText from '../Helpers/GetText';
-import '../styles/Services.scss';
 import SectionTitle from './SectionTitle';
-import SectionSubTitle from './SectionSubTitle';
 import NavToTop from './Nav/NavToTop';
 import ServiceCard  from './ServiceCard';
 
+import '../styles/Services.scss';
 
 class Services extends Component {
 

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import SectionTitle from './SectionTitle';
-import '../styles/Contact.scss';
-import '../styles/Nav.scss';
 import { default as IconEmail}  from '@material-ui/icons/EmailOutlined';
 import { default as IconPhone} from '@material-ui/icons/Call';
+
+import '../styles/Contact.scss';
 
 
 class Contact extends Component {
@@ -17,7 +17,7 @@ class Contact extends Component {
       <div className='Contact '>
         <SectionTitle title='Contact Details' />
         
-        <div className='h80 flexColumn textSize0 indent20 center w100'>
+        <div className='h70 flexColumn textSize0 indent20 center w100'>
 
             <div className='address textCenter gap10'>
               <strong>Striped Horse Resources Limited</strong><br />
@@ -27,11 +27,11 @@ class Contact extends Component {
             </div>
 
 
-            <a href='mailto:enquiries@striped-horse.com' target='_blank' rel='noopener noreferrer' className='navItem flexRow middle gap10'>
+            <a href='mailto:enquiries@striped-horse.com' target='_blank' rel='noopener noreferrer' className='flexRow middle gap10'>
               <IconEmail fontSize='small'/>&nbsp;enquiries@striped-horse.com
             </a>
 
-            <a href='tel:+447436890478' className='navItem flexRow middle gap10'>
+            <a href='tel:+447436890478' className='flexRow middle gap10'>
               <IconPhone fontSize='small'/>&nbsp;+44&nbsp;(0)743&nbsp;689&nbsp;0478
             </a>
 

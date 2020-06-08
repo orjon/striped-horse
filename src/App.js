@@ -35,34 +35,36 @@ class App extends Component{
               <Route
                 exact path='/about'
                 component = { About }
-                // render={(routeProps) => ( <About {...routeProps}/>)}
                 />
 
               <Route
                 exact path='/services'
                 component = { Services }
-                // render={(routeProps) => (<Services {...routeProps}/>)}
                 />
+
               <Route
                 exact path='/partners'
                 component = { Partners }
                 />
+
               <Route
                 exact path='/ethics'
                 component = { Ethics }
                 />
+
               <Route
                 exact path='/templates'
                 component = { Templates}/>
+
               <Route
                 exact path='/contact'
                 component = { Contact }
                 />
-                            <Route
-              exact path='/'
-              component = { Home }
-              // render={(routeProps) => ( <Home {...routeProps} /> )}
-            />
+                
+              <Route
+                  exact path='/'
+                  component = { Home }
+                />
           </Switch>
 
         </section>

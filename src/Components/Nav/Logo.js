@@ -7,15 +7,13 @@ class Logo extends Component {
 
 
   render(){
-
-    let { linkTo } = this.props
     
     return(
       <div className='Logo'>
-        <NavLink to={linkTo} className='navItem' activeClassName='selected'>
+        <NavLink to='/' activeClassName='selected'>
           <div className='flexRow center'>
             <img className='LogoImage' src={LogoImage} alt='Striped Horse Resource Logo'/>
-            <div className='LogoText'>Striped Horse Resources ltd</div>
+            <div className='LogoText'>Striped Horse Resources</div>
           </div>
         </NavLink>
       </div> 

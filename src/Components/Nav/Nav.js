@@ -27,17 +27,17 @@ class Nav extends Component {
     let { navLocations} = this.state
 
     let navItems = navLocations.map(location => 
-      <NavItem key={location} label={location}/>
+      <NavItem key={location} to={location}/>
     )
 
     return(
       <nav className='Nav w100 indent10 gap10'>
         {/* <ComponentSize /> */}
-        <Logo linkTo='/test2/'/>
+        <Logo />
         <div className='navItems'>
           {navItems}
           <div className='contactItems'>
-            <a href='tel:+44XXXXXXXXXX' className='navIcon indent10'>
+            <a href='tel:+447436890478' className='navIcon indent10'>
               <IconPhone fontSize='small'/>
             </a>
             <a href='mailto:contact@striped-horse.com' target='_blank'  rel='noopener noreferrer' className='navIcon indent10'>

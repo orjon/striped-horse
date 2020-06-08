@@ -5,16 +5,25 @@ class GetText extends Component {
   constructor(props){
     super(props);
     this.state={
-      text: null
+      text: ''
     }
   }
 
 
   fetchTextFile(file) {
     fetch(file)
-      .then((r) => r.text())
+      .then((response) => response.text())
       .then(text => this.setState({ text }));
   }
+
+  // fetchText(file){
+  //   Promise.all(
+  //     fetch(file)
+  //   ).then(response =>
+  //     response.text()
+  //   ).then(text =>
+  //     this.setState({ text }))
+  // }
 
   // function getSampleText() {
 
@@ -34,13 +43,11 @@ class GetText extends Component {
 
     let  { file } = this.props
   
-    if (this.state.text === null){
+    if (this.state.text === ''){
       this.fetchTextFile(`./textFiles/${file}.txt`);
     }
     return(
-      this.state.text && <span>
-        {this.state.text}
-      </span>
+      this.state.text
     )
   
   }

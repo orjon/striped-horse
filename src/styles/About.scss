@@ -2,16 +2,10 @@
 @import 'Section.scss';
 
 .About {
-  p {
-    border: $devBorder solid #DDD;
-    // background-color: green;
-
-  }
 
   img {
     max-width: 100%;
     max-width: 450px;
-
 
   &.left {
     float: left;

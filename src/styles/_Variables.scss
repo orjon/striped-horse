@@ -1,8 +1,8 @@
 $devBorder: 0px;
 
 $breakPoint0: 640px;
-$breakPoint1: 700px;
-$breakPoint2: 1000px;
+$breakPoint1: 725px;
+$breakPoint2: 1050px;
 $breakPoint3: 1400px;
 
 $breakPointA: 700px;
@@ -135,6 +135,7 @@ $textShadowColor: rgba(0,0,0,0.75);
 .indent20 {
   padding-left: 20px;
   padding-right: 20px;
+  
 }
 .indent40 {
   padding-left: 40px;
@@ -145,8 +146,9 @@ $textShadowColor: rgba(0,0,0,0.75);
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .gap20 {
-  padding-top:20px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .gap30 {
@@ -212,12 +214,10 @@ h4 {
 
 .textSize1 {
   font-size: 13pt;
-  text-align: justify;
 }
 
 .textSize2 {
   font-size: 12pt;
-  text-align: justify;
 }
 
 .textSize3 {
@@ -226,11 +226,9 @@ h4 {
 }
 
 @media only screen and (min-width: $breakPoint1) {
-  color:red;
 
   &h1 {
     font-size: 40pt;
-    text-transform: uppercase;
   }
 
   &h2 {
@@ -244,16 +242,13 @@ h4 {
   &h4 {
     font-size: 15pt;
   }
-}
-
-@media only screen and (min-width: $breakPoint2) {
+  
   &.textSize0 {
     font-size: 18pt;
   }
   
   &.textSize1 {
     font-size: 15pt;
-    
   }
   
   &.textSize2 {
@@ -265,12 +260,20 @@ h4 {
   }
 }
 
-// p {
-//   border: $devBorder solid #DDD;
-//   img {
-//     width: 400px;
-//   &.left {
-//       float: left;
-//       padding: 0 20px 20px 0;}
+// @media only screen and (min-width: $breakPoint2) {
+//   &.textSize0 {
+//     font-size: 18pt;
+//   }
+  
+//   &.textSize1 {
+//     font-size: 15pt;
+//   }
+  
+//   &.textSize2 {
+//     font-size: 13pt;
+//   }
+  
+//   &.textSize3 {
+//     font-size: 12pt;
 //   }
 // }

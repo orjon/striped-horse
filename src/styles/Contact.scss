@@ -1,0 +1,21 @@
+@import 'Variables.scss';
+@import 'Section.scss';
+
+.Contact {
+
+  .normal {
+    display:none;
+  }
+
+  @media only screen and (min-width: $breakPoint0) {
+    .small {
+      display: none;
+    }
+
+    .normal {
+      display: block;
+    }
+  }
+
+}
+

@@ -19,28 +19,29 @@ class About extends Component {
         <SectionTitle title='About Us' />
 
 
-        <div className='textBlock center w100'>
+        <div className='sectionContent textBlock center w100'>
 
-
-          <div className='small flexColumn center textSize1 indent40 textJustify'>
+          <div className='small flexColumn center indent20 textJustify'>
             <img src={require('../images/about/CharlesThomas01.jpg')} alt='Stop sign in the desert' className='w100' />
-            <div className='gap10'>
-              <GetText file='about01'/>
+            <div className='textSize1 gap10'>
+              <GetText file='about-01'/>
               <br /><br />
-              <GetText file='about02'/>
+              <GetText file='about-02'/>
               <br /><br />
-              <GetText file='about03'/>
+              <GetText file='about-03'/>
             </div>
             <NavToTop />
           </div>
 
-          <div className='normal flexRow textSize0 indent40 textJustify'>
+          <div className='normal flexRow textSize0 indent20 textJustify'>
             <img src={require('../images/about/CharlesThomas01.jpg')} alt='Stop sign in the desert' className='w50 left' />
-            <GetText file='about01'/>
-            <br /><br />
-            <GetText file='about02'/>
-            <br /><br />
-            <GetText file='about03'/>
+            <div className='textSize1'>
+              <GetText file='about-01'/>
+              <br /><br />
+              <GetText file='about-02'/>
+              <br /><br />
+              <GetText file='about-03'/>
+            </div>
           </div>
 
         </div>

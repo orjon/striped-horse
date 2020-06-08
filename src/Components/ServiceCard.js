@@ -18,7 +18,7 @@ class ServiceCard extends Component {
           <img className='BlockImage' src={imagePath} alt={`${title} logo`}/>
 
           <div className={'textBlock flexColumn textSize1'}>
-            <strong className={`gap10 ${titleAlign}`}>{title}</strong>
+            <strong className={`gap20 ${titleAlign}`}>{title}</strong>
             <p className='textJustify textSize2'>{text}</p>
           </div>
 

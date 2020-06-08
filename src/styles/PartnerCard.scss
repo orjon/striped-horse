@@ -4,27 +4,16 @@
 .PartnerCard {
   border: $devBorder solid lime;
 
-$breakPointA: 700px;
-$breakPointB: 1100px;
-$breakPointC: 1500px;
-
-$breakPointA: 700px;
-$breakPointB: 1100px;
-$breakPointC: 1500px;
-
   flex-basis: 100%;
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: $breakPoint1) {
     flex-basis: 50%;
   }
   @media only screen and (min-width: 1200px) {
     flex-basis: 25%;
   }
-
   @media only screen and (min-width: $breakPointC) {
     flex-basis: 25%;
   }
-
-
 
   .PartnerImage {
     $BlockImageSize: 150px;
@@ -37,9 +26,6 @@ $breakPointC: 1500px;
     strong {
       text-transform: capitalize;
       margin-bottom: 5px;
-    }
-    p {
-      text-align: left;
     }
   }
 }

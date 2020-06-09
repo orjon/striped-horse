@@ -49,7 +49,7 @@ class NavBurgerMenu extends Component {
             <div className='navItem indent40'>
               {navItems}
             </div>
-          </div> : null}
+          </div> : null }
         
       </div>
     );

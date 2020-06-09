@@ -14,7 +14,7 @@ class NavItem extends Component {
 
     return(
       <NavLink exact to={`/${link}`} className='navItem indent10' activeClassName='selected'>
-        <div>{to}</div>
+        <div className='gap5'>{to}</div>
       </NavLink>
     )
   }

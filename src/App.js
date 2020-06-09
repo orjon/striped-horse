@@ -15,7 +15,9 @@ import './styles/App.scss';
 // function App() {
 class App extends Component{
   render(){
-
+    console.log('Striped Horse Resources Ltd.')
+    console.log('v1.0 2020.06.09')
+    console.log('www.orjon.com')
 
     return (
       <div className='App'>

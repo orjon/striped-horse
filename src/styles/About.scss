@@ -18,19 +18,20 @@
     display:none;
   }
 
-  // @media only screen and (min-width: $breakPoint0) {
-  //   color: red;
-  //   min-width: 350px;
-  //   .slides {
-  //     max-width: 475px;
-  //   }
-  //   .small {
-  //     display: none;
-  //   }
+  @media only screen and (min-width: $breakPoint0) {
+    
+    min-width: 350px;
+    .slides {
+      max-width: 475px;
+    }
+    .small {
+      display: none;
+    }
 
-  //   .normal {
-  //     display: block;
-  //   }
-  // }
+    .normal {
+      display: block;
+      // color: red;
+    }
+  }
 }
 

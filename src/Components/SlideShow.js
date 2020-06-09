@@ -33,7 +33,7 @@ class SlideShow extends Component{
 
 
     return (
-      <div className='slide-container wMax450'>
+      <div className='slide-container'>
         <Fade {...fadeProperties}>
           {slides}
         </Fade>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import About from './Components/About';
+// import { default as About2} from './Components/AboutSlideShow';
 import Home from './Components/Home';
 import Services from './Components/Services';
 import Partners from './Components/Partners';
@@ -19,50 +20,33 @@ class App extends Component{
     return (
       <div className='App'>
         <Nav />
-        <section className='flexColumn w100'>
+        <section className='fullHeight flexColumn w100'>
           <Switch>
-
               <Route
                 exact path='/about'
-                component = { About }
-                />
-
+                component = { About }/>
               <Route
                 exact path='/services'
-                component = { Services }
-                />
-
+                component = { Services }/>
               <Route
                 exact path='/partners'
-                component = { Partners }
-                />
-
+                component = { Partners }/>
               <Route
                 exact path='/ethics'
-                component = { Ethics }
-                />
-
+                component = { Ethics }/>
               <Route
                 exact path='/contact'
-                component = { Contact }
-                />
-                
+                component = { Contact }/>    
               <Route
                 exact path='/'
-                component = { Home }
-              />
-
+                component = { Home }/>
               <Route
                 path="*"
-                component = { NoRoute }
-              />
+                component = { NoRoute }/>
           </Switch>
-
         </section>
-       
-  
       </div>
-    );
+    )
   }
 
   

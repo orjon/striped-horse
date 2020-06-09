@@ -4,6 +4,7 @@ import { default as IconEmail}  from '@material-ui/icons/EmailOutlined';
 import { default as IconPhone} from '@material-ui/icons/Call';
 
 import '../styles/Contact.scss';
+import '../styles/Nav.scss';
 
 
 class Contact extends Component {
@@ -14,13 +15,16 @@ class Contact extends Component {
 
   render(){
     return(
-      <div className='Contact '>
+      <div className='Contact'>
+
+
         <SectionTitle title='Contact Details' />
         
-        <div className='h70 flexColumn textSize0 indent20 center w100'>
+        <div className='sectionContent h75 flexColumn textSize0 indent20 center w100'>
 
             <div className='address textCenter gap10'>
-              <strong>Striped Horse Resources Limited</strong><br />
+              <div className='LogoText'>Striped Horse Resources Limited</div>
+              {/* <strong>Striped Horse Resources Limited</strong><br /> */}
               Oakdale, Farley, Shropshire.<br />
               TF13 6NX<br />
               United Kingdom<br />
@@ -47,6 +51,12 @@ class Contact extends Component {
             </div>
 
           </div>
+
+          <div className='orjon textSize2 flexColumn textCenter TextLink'>
+            <a href='http://www.orjon.com/' className='flexRow middle gap10'>
+              [ design + build : orjon ]
+            </a>
+           </div>
         
       </div>
     )

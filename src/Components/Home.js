@@ -25,11 +25,10 @@ class Home extends Component {
       return(
         <div className='Home'>
   
-          <div className='image01 h60 flexColumn spread'>
+          <div className='imageHero h70 flexColumn spread'>
             <div className='overlayTop'>
-              {/* <SectionTitle title='Home' overlay={true}/> */}
             </div>
-            <div className='sectionContent flexRow textBlock gap20 flex overlayWhite right bottom'>
+            <div className='flexRow textBlock gap20 flex overlayWhite right bottom'>
               <h2 className='w80 indent20 textRight'>
                 <GetText file='home-01'/>
               </h2>
@@ -43,7 +42,7 @@ class Home extends Component {
                 <GetText file='home-02'/>
               </div>
               <div className='textSize0 w100 flexRow right'>
-                <Link to={`/about`} className='navTextLink'>read more...</Link>
+                <Link to={`/about`} className='TextLink'>read more...</Link>
               </div>
             </div>
 

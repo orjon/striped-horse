@@ -3,6 +3,15 @@
 
 .Contact {
 
+  height: 100%;
+
+  .orjon {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    letter-spacing: 1.5pt;
+  }
+
   .normal {
     display:none;
   }
@@ -15,6 +24,12 @@
     .normal {
       display: block;
     }
+  }
+
+  .LogoText {
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    font-size: 1.6rem;
   }
 
 }

@@ -7,20 +7,20 @@
   margin: auto; }
 
  
-// .each-slide > div {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background-size: cover;
-//   // height: 300px;
-// }
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  // height: 300px;
+}
  
-// .each-slide span {
-//   padding: 20px;
-//   font-size: 20px;
-//   background: #efefef;
-//   text-align: center;
-// }
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
  
 
 .each-fade {
@@ -36,8 +36,8 @@
   }
 }
 
-.wMax450 {
-  max-width: 450px;
-}
+// .wMax450 {
+//   max-width: 450px;
+// }
  
 

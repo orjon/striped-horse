@@ -19,7 +19,7 @@ class Ethics extends Component {
 
 
 
-        <div className='sectionContent center w100'>
+        <div className='sectionContent flexColumn h75 center w100'>
 
           <div className='small flexColumn center textSize1 indent20 textJustify '>
             <img src={require('../images/ethics/ethics.jpg')} alt='Stop sign in the desert' className='w100' />

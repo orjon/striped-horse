@@ -26,6 +26,7 @@ $colorCardShadow: rgba(0,0,0,0.2);
 $colorBannerText: black;
 
 $imageDarken: .1;
+$imageLighten: .1;
 
 $textShadowBlur: 5px;
 $textShadowColor: rgba(0,0,0,0.75);
@@ -93,8 +94,25 @@ $textShadowColor: rgba(0,0,0,0.75);
 }
 
 
-.flex {
-  flex:1;
+// .slidesX {
+
+//   img:first-child {
+//     position: relative;
+//     left: 0%;
+//     top: 0%;
+//   }
+
+//   img {
+//     position: absolute;
+
+
+//   }
+
+
+// }
+
+.blue {
+  background-color: blue;
 }
 
 
@@ -127,6 +145,10 @@ $textShadowColor: rgba(0,0,0,0.75);
 .h80 {min-height: 80vh}
 .h90 {min-height: 90vh}
 .h100 {min-height: 100vh}
+
+.fullHeight {
+  height: 100%;
+}
 
 .indent10 {
   padding-left: 10px;

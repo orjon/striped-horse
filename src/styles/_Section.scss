@@ -4,7 +4,7 @@
 
 section {
   border: $devBorder solid lime;
-  padding-top: $navHeight;
+  margin-top: $navHeight;
   width :100%;
 
   .sectionContent {
@@ -44,72 +44,20 @@ section {
   }
 
 
-
-  .image01{ 
-    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/placeholder/Services01.jpg');
+  .imageHero{ 
+    background: url('../images/home/TableMountain.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  .image02{ 
-    background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/placeholder/OilRig.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .image03{ 
-    background: url('../images/placeholder/OilRig.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .image04{ 
-    align-content: stretch;
-    background: url('../images/placeholder/OilRig2sml.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .image-oilrig3{ 
-    align-content: stretch;
-    background: url('../images/placeholder/OilRig3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .image-3d{ 
-    align-content: stretch;
-    background: url('../images/placeholder/3dsml.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: $devBorder solid dodgerblue;
-  }
-
-  .image-pipes{ 
-    align-content: stretch;
-    background: url('../images/placeholder/pipes.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: $devBorder solid dodgerblue;
-  
-  }
-
-  .image-pumps{ 
-    // align-content: stretch;
-    background: url('../images/placeholder/pumps.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: $devBorder solid dodgerblue;
-    margin-left: 20px;
-  }
+  // .image01{ 
+  //   background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/home/TableMountain.jpg');
+  //   background: linear-gradient(rgba(255, 255, 255, $imageLighten), rgba(255, 255, 255, $imageLighten)),  url('../images/home/TableMountain.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  // }
 
 }
 

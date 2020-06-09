@@ -4,12 +4,13 @@ $navBorder: 0px solid rgb(0, 129, 199);
 
 
 
-.navTextLink {
+.TextLink {
   border: $devBorder solid cyan;
   cursor: pointer;
   color: $colorNavItem;
   &:hover {
     color: $colorNavItemSelected;
+    // letter-spacing: 0.05pt;
   }
 }
 

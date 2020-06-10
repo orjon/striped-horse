@@ -5,12 +5,19 @@
 
   height: 100%;
 
+  
+
+
+
   .orjon {
     width: 100%;
     position: fixed;
     bottom: 0px;
+    right: 0px;
     letter-spacing: 1.5pt;
   }
+
+  
 
   .normal {
     display:none;
@@ -32,5 +39,11 @@
     font-size: 1.6rem;
   }
 
+}
+
+.LogoText, .address, .legal, .email, .phoneNo {
+  -webkit-user-select: text !important; /* Safari */
+  -ms-user-select: text !important; /* IE 10+ and Edge */
+  user-select: text !important; /* Standard syntax */
 }
 

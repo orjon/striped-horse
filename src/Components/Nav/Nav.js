@@ -39,7 +39,7 @@ class Nav extends Component {
             <a href='tel:+447436890478' className='navIcon indent10'>
               <IconPhone fontSize='small'/>
             </a>
-            <a href='mailto:contact@striped-horse.com' target='_blank'  rel='noopener noreferrer' className='navIcon indent10'>
+            <a href='mailto:enquiries@striped-horse.com' target='_blank'  rel='noopener noreferrer' className='navIcon indent10'>
               <IconEmail fontSize='small'/>
             </a>
           </div>

@@ -16,7 +16,7 @@ import './styles/App.scss';
 class App extends Component{
   render(){
     console.log('Striped Horse Resources Ltd.')
-    console.log('v1.0 2020.06.09')
+    console.log('v1.1 2020.06.10')
     console.log('www.orjon.com')
 
     return (
@@ -24,27 +24,27 @@ class App extends Component{
         <Nav />
         <section className='fullHeight flexColumn w100'>
           <Switch>
-              <Route
-                exact path='/about'
-                component = { About }/>
-              <Route
-                exact path='/services'
-                component = { Services }/>
-              <Route
-                exact path='/partners'
-                component = { Partners }/>
-              <Route
-                exact path='/ethics'
-                component = { Ethics }/>
-              <Route
-                exact path='/contact'
-                component = { Contact }/>    
-              <Route
-                exact path='/'
-                component = { Home }/>
-              <Route
-                path="*"
-                component = { NoRoute }/>
+            <Route
+              exact path='/'
+              component = { Home }/>
+            <Route
+              path='/about'
+              component = { About }/>
+            <Route
+              path='/services'
+              component = { Services }/>
+            <Route
+              path='/partners'
+              component = { Partners }/>
+            <Route
+              path='/ethics'
+              component = { Ethics }/>
+            <Route
+              path='/contact'
+              component = { Contact }/>    
+            <Route
+              path="*"
+              component = { NoRoute }/>
           </Switch>
         </section>
       </div>

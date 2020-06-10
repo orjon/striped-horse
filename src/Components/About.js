@@ -10,7 +10,12 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        slidesA: ['CharlesThomas01','CharlesThomas02','CharlesThomas03']
+      slidesA: [
+        'CharlesThomas01',
+        'CharlesThomas02',
+        'CharlesThomas03',
+        'CharlesThomas04'
+      ]
     };
   }
 

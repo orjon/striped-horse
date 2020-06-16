@@ -28,19 +28,19 @@ class App extends Component{
               exact path='/'
               component = { Home }/>
             <Route
-              path='/about'
+              exact path='/about'
               component = { About }/>
             <Route
-              path='/services'
+              exact path='/services'
               component = { Services }/>
             <Route
-              path='/partners'
+              exact path='/partners'
               component = { Partners }/>
             <Route
-              path='/ethics'
+              exact path='/ethics'
               component = { Ethics }/>
             <Route
-              path='/contact'
+              exact path='/contact'
               component = { Contact }/>    
             <Route
               path="*"

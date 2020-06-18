@@ -7,13 +7,6 @@ import '../styles/Nav.scss';
 
 
 class Home extends Component {
-
-    constructor(props) {
-      super(props);
-      this.state = {
-          // slidesA: ['A01','A02','A03']
-      };
-    }
   
     componentDidMount() {
       window.scrollTo(0, 0)

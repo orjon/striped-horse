@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SectionTitle from './SectionTitle';
 import { default as IconEmail}  from '@material-ui/icons/EmailOutlined';
 import { default as IconPhone} from '@material-ui/icons/Call';
+import GetText from '../Helpers/GetText';
 
 import '../styles/Contact.scss';
 import '../styles/Nav.scss';
@@ -14,6 +15,20 @@ class Contact extends Component {
   }
 
   render(){
+
+
+    const address01 = <GetText file='contact-Address01'/>
+    const address02 = <GetText file='contact-Address02'/>
+    const address03 = <GetText file='contact-Address03'/>
+    const address04 = <GetText file='contact-Address04'/>
+    const email = <GetText file='contact-Email'/>
+    const telephone = <GetText file='contact-Telephone'/>
+    const regLong = <GetText file='contact-CompanyNoLong'/>
+    const regShort = <GetText file='contact-CompanyNoShort'/>
+    const VATLong = <GetText file='contact-VATLong'/>
+    const VATShort = <GetText file='contact-VATShort'/>
+
+
     return(
       <div className='Contact'>
 
@@ -23,31 +38,30 @@ class Contact extends Component {
         <div className='sectionContent h75 flexColumn textSize0 indent20 center w100'>
 
           <div className='address textCenter gap10'>
-            <div className='LogoText'>Striped Horse Resources Limited</div>
-            {/* <strong>Striped Horse Resources Limited</strong><br /> */}
-            Oakdale, Farley, Shropshire.<br />
-            TF13 6NX<br />
-            United Kingdom<br />
+            <div className='LogoText'>{address01}</div>
+            {address02}<br />
+            {address03}<br />
+            {address04}<br />
           </div>
 
 
           <a href='mailto:enquiries@striped-horse.com' target='_blank' rel='noopener noreferrer' className='email flexRow middle gap10'>
-            <IconEmail fontSize='small'/>&nbsp;enquiries@striped-horse.com
+            <IconEmail fontSize='small'/>&nbsp;{email}
           </a>
 
           <a href='tel:+447436890478' className='phoneNo flexRow middle gap10'>
-            <IconPhone fontSize='small'/>&nbsp;+44&nbsp;(0)743&nbsp;689&nbsp;0478
+            <IconPhone fontSize='small'/>&nbsp;{telephone}
           </a>
 
           <div className='normal legal textSize2 textCenter gap10'>
-            UK company registration number: 11132222<br />
-            VAT registration number:  335 4802 08<br />
+            {regLong}<br />
+            {VATLong}<br />
           </div>
 
 
           <div className='small legal textSize2 textCenter gap10'>
-            UK registration: 11132222<br />
-            VAT:  335 4802 08<br />
+            {regShort}<br />
+            {VATShort}<br />
           </div>
 
         </div>

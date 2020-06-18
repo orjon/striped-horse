@@ -1,6 +1,5 @@
 @import 'Variables.scss';
 @import 'Card.scss';
-// @import 'Grid.scss';
 
 section {
   border: $devBorder solid lime;
@@ -30,11 +29,6 @@ section {
     font-size: 30pt;
   }
 
-  // .textBlock {
-  //   border: $devBorder solid cyan;
-  //   align-items: flex-start;
-  //   color: $colorBannerText;
-  // }
 
   .textBanner, .textBlock {
     &.overlayWhite {
@@ -45,7 +39,7 @@ section {
 
 
   .imageHero{ 
-    background: url('../images/home/TableMountain.jpg');
+    background: url('../images/home/heroImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,7 +52,6 @@ section {
   //   background-size: cover;
   //   background-position: center;
   // }
-
 }
 
 

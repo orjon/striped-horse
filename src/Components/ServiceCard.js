@@ -8,8 +8,6 @@ class ServiceCard extends Component {
     let { title, titleAlign, text, image, width, orientation, alignment } = this.props
 
     const imagePath = require(`../images/${image}`)
-
-
     return(
       <div className={`ServiceCard w100 indent20 gap20 flexColumn middle ${width}`}>
  

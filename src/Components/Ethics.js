@@ -11,6 +11,8 @@ class Ethics extends Component {
 
   render(){
 
+    const imagePath = require(`../images/ethics/ethics.jpg`)
+
 
     return(
       <div className='Ethics'>
@@ -22,14 +24,14 @@ class Ethics extends Component {
         <div className='sectionContent flexColumn h75 center w100'>
 
           <div className='small flexColumn center textSize1 indent20 textJustify '>
-            <img src={require('../images/ethics/ethics.jpg')} alt='Stop sign in the desert' className='w100' />
+            <img src={imagePath} alt='Stop sign in the desert' className='w100' />
             <div className='gap10'>
               <GetText file='ethics'/>
             </div>
           </div>
 
           <div className='normal flexRow middle textSize0 indent20 textJustify'>
-            <img src={require('../images/ethics/ethics.jpg')} alt='Stop sign in the desert' className='w50 right' />
+            <img src={imagePath} alt='Stop sign in the desert' className='w50 right' />
             <div className=''>
               <GetText file='ethics'/>
             </div>

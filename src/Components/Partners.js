@@ -56,6 +56,13 @@ class Partners extends Component {
               title={<GetText file='partner-pveConsultingTitle'/>}
               text={<GetText file='partner-pveConsulting'/>}
             />
+
+            <PartnerCard
+              link='https://www.tsavooilfieldservices.com//'
+              image='partners/Tsavo.png'
+              title={<GetText file='partner-tsavoTitle'/>}
+              text={<GetText file='partner-tsavo'/>}
+            />
             
           </div>
 

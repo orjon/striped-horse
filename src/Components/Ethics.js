@@ -19,8 +19,6 @@ class Ethics extends Component {
 
         <SectionTitle title='Ethics' />
 
-
-
         <div className='sectionContent flexColumn h75 center w100'>
 
           <div className='small flexColumn center textSize1 indent20 textJustify '>
@@ -38,12 +36,6 @@ class Ethics extends Component {
           </div>
 
         </div>
-
-
-
-
-        
-
 
       </div>
     )

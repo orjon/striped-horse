@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class SectionSubTitle extends Component {
   render(){
-    let { subTitle, overlay } = this.props
+    let { title, overlay } = this.props
 
     let overlayWhite = false
 
@@ -12,9 +12,9 @@ class SectionSubTitle extends Component {
 
     return(
       <div className='flexRow'>    
-        <div className={`textBlock w100 indent40 gap10 ${overlayWhite ? 'overlayWhite':''}`}>
+        <div className={`textBlock w100 indent20 gap10 ${overlayWhite ? 'overlayWhite':''}`}>
           <br />
-          <h3>{subTitle}</h3>
+          <h3>{title}</h3>
         </div>
      </div>
     )

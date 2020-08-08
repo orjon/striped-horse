@@ -9,7 +9,6 @@ $breakPointA: 700px;
 $breakPointB: 1100px;
 $breakPointC: 1500px;
 
-
 $navHeight: 68px;
 $navShadowBlur: 10px;
 
@@ -30,10 +29,6 @@ $imageLighten: .1;
 
 $textShadowBlur: 5px;
 $textShadowColor: rgba(0,0,0,0.75);
-
-
-
-
 
 .flexColumn {
   display: flex;
@@ -93,23 +88,6 @@ $textShadowColor: rgba(0,0,0,0.75);
   }
 }
 
-
-// .slidesX {
-
-//   img:first-child {
-//     position: relative;
-//     left: 0%;
-//     top: 0%;
-//   }
-
-//   img {
-//     position: absolute;
-
-
-//   }
-
-
-// }
 
 .blue {
   background-color: blue;

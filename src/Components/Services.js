@@ -28,23 +28,27 @@ class Services extends Component {
 
           <div className='flexRow flexWrap'>
 
+
             <ServiceCard
+              // Block Evaluation
               orientation='flexColumn'
               alignment='middle'
               titleAlign='textCenter'
-              image='services/serviceA.jpg'
-              title={<GetText file='serviceA-title'/>}
-              text={<GetText file='serviceA-text'/>}/>
+              image='services/serviceI.jpg'
+              title={<GetText file='serviceI-title'/>}
+              text={<GetText file='serviceI-text'/>}/>
 
             <ServiceCard
+              // Tech Support
               orientation='flexColumn'
               alignment='middle'
               titleAlign='textCenter'
-              image='services/serviceB.jpg'
-              title={<GetText file='serviceB-title'/>}
-              text={<GetText file='serviceB-text'/>}/>
-
+              image='services/serviceF.jpg'
+              title={<GetText file='serviceF-title'/>}
+              text={<GetText file='serviceF-text'/>}/>
+            
             <ServiceCard
+              // Licensing 
               orientation='flexColumn'
               alignment='middle'
               titleAlign='textCenter'
@@ -53,6 +57,16 @@ class Services extends Component {
               text={<GetText file='serviceC-text'/>}/>
 
             <ServiceCard
+              // Environmental
+              orientation='flexColumn'
+              alignment='middle'
+              titleAlign='textCenter'
+              image='services/serviceH.jpg'
+              title={<GetText file='serviceH-title'/>}
+              text={<GetText file='serviceH-text'/>}/>
+
+            <ServiceCard
+              // Geo
               orientation='flexColumn'
               alignment='middle'
               titleAlign='textCenter'
@@ -61,6 +75,25 @@ class Services extends Component {
               text={<GetText file='serviceD-text'/>}/>
 
             <ServiceCard
+              //Business Dev
+              orientation='flexColumn'
+              alignment='middle'
+              titleAlign='textCenter'
+              image='services/serviceA.jpg'
+              title={<GetText file='serviceA-title'/>}
+              text={<GetText file='serviceA-text'/>}/>
+
+            <ServiceCard
+              // Upstream
+              orientation='flexColumn'
+              alignment='middle'
+              titleAlign='textCenter'
+              image='services/serviceJ.jpg'
+              title={<GetText file='serviceJ-title'/>}
+              text={<GetText file='serviceJ-text'/>}/>
+
+            <ServiceCard
+              // Project Management
               orientation='flexColumn'
               alignment='middle'
               titleAlign='textCenter'
@@ -69,20 +102,22 @@ class Services extends Component {
               text={<GetText file='serviceE-text'/>}/>
 
             <ServiceCard
-              orientation='flexColumn'
-              alignment='middle'
-              titleAlign='textCenter'
-              image='services/serviceF.jpg'
-              title={<GetText file='serviceF-title'/>}
-              text={<GetText file='serviceF-text'/>}/>
-
-            <ServiceCard
+              // Local content
               orientation='flexColumn'
               alignment='middle'
               titleAlign='textCenter'
               image='services/serviceG.jpg'
               title={<GetText file='serviceG-title'/>}
               text={<GetText file='serviceG-text'/>}/>
+
+            <ServiceCard
+              // Techsupport
+              orientation='flexColumn'
+              alignment='middle'
+              titleAlign='textCenter'
+              image='services/serviceB.jpg'
+              title={<GetText file='serviceB-title'/>}
+              text={<GetText file='serviceB-text'/>}/>
 
           </div>
 

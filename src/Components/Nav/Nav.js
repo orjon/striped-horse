@@ -2,34 +2,34 @@ import React, { Component } from 'react';
 import Logo from './Logo';
 import NavItem from './NavItem';
 import '../../styles/Nav.scss';
-import { default as IconEmail}  from '@material-ui/icons/EmailOutlined';
-import { default as IconPhone} from '@material-ui/icons/Call';
+import { default as IconEmail } from '@material-ui/icons/EmailOutlined';
+import { default as IconPhone } from '@material-ui/icons/Call';
 import NavBurgerMenu from './NavBurgerMenu';
 // import ComponentSize from '../Helpers/ComponentSize';
 
 class Nav extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       navLocations: [
         'home',
         'services',
         'partners',
         'about',
-        'ethics',
-        'contact'
-      ]
-    }
+        'ethics/QHSE',
+        'contact',
+      ],
+    };
   }
 
-  render(){
-    let { navLocations} = this.state
+  render() {
+    let { navLocations } = this.state;
 
-    let navItems = navLocations.map(location => 
-      <NavItem key={location} to={location}/>
-    )
+    let navItems = navLocations.map((location) => (
+      <NavItem key={location} to={location} />
+    ));
 
-    return(
+    return (
       <nav className='Nav w100 indent10 gap10'>
         {/* <ComponentSize /> */}
         <Logo />
@@ -37,18 +37,23 @@ class Nav extends Component {
           {navItems}
           <div className='contactItems'>
             <a href='tel:+447436890478' className='navIcon indent10'>
-              <IconPhone fontSize='small'/>
+              <IconPhone fontSize='small' />
             </a>
-            <a href='mailto:enquiries@striped-horse.com' target='_blank'  rel='noopener noreferrer' className='navIcon indent10'>
-              <IconEmail fontSize='small'/>
+            <a
+              href='mailto:enquiries@striped-horse.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='navIcon indent10'
+            >
+              <IconEmail fontSize='small' />
             </a>
           </div>
         </div>
         <div className='navBurger'>
-          <NavBurgerMenu navLocations={navLocations}/>
+          <NavBurgerMenu navLocations={navLocations} />
         </div>
       </nav>
-    )
+    );
   }
 }
 export default Nav;

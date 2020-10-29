@@ -11,50 +11,30 @@ import Ethics from './Components/Ethics';
 import NoRoute from './Components/NoRoute';
 import './styles/App.scss';
 
-
 // function App() {
-class App extends Component{
-  render(){
-    console.log('Striped Horse Resources Ltd.')
-    console.log('v1.1 2020.06.10')
-    console.log('www.orjon.com')
+class App extends Component {
+  render() {
+    console.log('Striped Horse Resources Ltd.');
+    console.log('v1.2 2020.10.29');
+    console.log('www.orjon.com');
 
     return (
       <div className='App'>
         <Nav />
         <section className='fullHeight flexColumn w100'>
           <Switch>
-            <Route
-              exact path='/'
-              component = { Home }/>
-            <Route
-              exact path='/about'
-              component = { About }/>
-            <Route
-              exact path='/services'
-              component = { Services }/>
-            <Route
-              exact path='/partners'
-              component = { Partners }/>
-            <Route
-              exact path='/ethics'
-              component = { Ethics }/>
-            <Route
-              exact path='/contact'
-              component = { Contact }/>    
-            <Route
-              path="*"
-              component = { NoRoute }/>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/services' component={Services} />
+            <Route exact path='/partners' component={Partners} />
+            <Route exact path='/ethics' component={Ethics} />
+            <Route exact path='/contact' component={Contact} />
+            <Route path='*' component={NoRoute} />
           </Switch>
         </section>
       </div>
-    )
+    );
   }
-
-  
 }
 
-
-
 export default App;
-

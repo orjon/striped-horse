@@ -2,21 +2,27 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 class NavItem extends Component {
-  render(){
-    let { to }  = this.props
+  render() {
+    let { to } = this.props;
 
-    let link = to
+    let link = to;
 
-    if (link === 'home'){
-      link = ''
+    if (link === 'home') {
+      link = '';
+    } else if (link === 'ethics/QHSE') {
+      link = 'ethics';
     }
 
-
-    return(
-      <NavLink exact to={`/${link}`} className='navItem indent10' activeClassName='selected'>
+    return (
+      <NavLink
+        exact
+        to={`/${link}`}
+        className='navItem indent10'
+        activeClassName='selected'
+      >
         <div className='gap5'>{to}</div>
       </NavLink>
-    )
+    );
   }
 }
 

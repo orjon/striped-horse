@@ -28,6 +28,7 @@ class Ethics extends Component {
               <a
                 href='http://www.striped-horse.com/qhse/Striped Horse QHSE Policy.pdf'
                 target='_blank'
+                rel='noopener noreferrer'
               >
                 <img
                   src={imageQHSE}
@@ -49,6 +50,7 @@ class Ethics extends Component {
               <a
                 href='http://www.striped-horse.com/qhse/Striped Horse QHSE Policy.pdf'
                 target='_blank'
+                rel='noopener noreferrer'
               >
                 <img
                   src={imageQHSE}

@@ -25,7 +25,10 @@ class Ethics extends Component {
             />
             <div className='gap10 flexColumn center'>
               <GetText file='ethics' />
-              <a href='http://www.striped-horse.com/qhse/Striped Horse QHSE Policy.pdf'>
+              <a
+                href='http://www.striped-horse.com/qhse/Striped Horse QHSE Policy.pdf'
+                target='_blank'
+              >
                 <img
                   src={imageQHSE}
                   alt='QHSE document'
@@ -43,7 +46,10 @@ class Ethics extends Component {
             />
             <div className='flexColumn center '>
               <GetText file='ethics' />
-              <a href='http://www.striped-horse.com/qhse/Striped Horse QHSE Policy.pdf'>
+              <a
+                href='http://www.striped-horse.com/qhse/Striped Horse QHSE Policy.pdf'
+                target='_blank'
+              >
                 <img
                   src={imageQHSE}
                   alt='QHSE document'

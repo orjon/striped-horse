@@ -1,19 +1,17 @@
-import { Component } from 'react'
-
+import { Component } from 'react';
 
 class GetText extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
-      text: ''
-    }
+    this.state = {
+      text: '',
+    };
   }
-
 
   fetchTextFile(file) {
     fetch(file)
       .then((response) => response.text())
-      .then(text => this.setState({ text }));
+      .then((text) => this.setState({ text }));
   }
 
   // fetchText(file){
@@ -38,18 +36,13 @@ class GetText extends Component {
   //   })
   // }
 
+  render() {
+    let { file } = this.props;
 
-  render(){
-
-    let  { file } = this.props
-  
-    if (this.state.text === ''){
+    if (this.state.text === '') {
       this.fetchTextFile(`./textFiles/${file}.txt`);
     }
-    return(
-      this.state.text
-    )
-  
+    return this.state.text;
   }
 }
 

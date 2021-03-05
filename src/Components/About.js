@@ -27,7 +27,7 @@ class About extends Component {
   render() {
     return (
       <div className='About'>
-        <SectionTitle title='About' />
+        <SectionTitle title='Leadership' />
 
         <div className='sectionContent'>
           {/* <SectionSubTitle title='Charles Thomas' /> */}
@@ -35,7 +35,7 @@ class About extends Component {
           <div className='small flexColumn center indent20 textJustify'>
             <SlideShow slides={this.state.charles} path='about' speed='3500' />
             <div className='textSize1 gap10'>
-              <strong>Charles Thomas</strong>
+              <strong>Charles Thomas </strong>
               <GetText file='about-01' />
               <br />
               <br />
@@ -49,7 +49,7 @@ class About extends Component {
           <div className='normal flexRow textSize0 indent20 textJustify'>
             <SlideShow slides={this.state.charles} path='about' speed='3500' />
             <div className='textSize1 gap10'>
-              <strong>Charles Thomas</strong>
+              <strong>Charles Thomas </strong>
               <GetText file='about-01' />
               <br />
               <br />
@@ -65,7 +65,7 @@ class About extends Component {
           <div className='small flexColumn center gap40 indent20 textJustify'>
             <SlideShow slides={this.state.dilo} path='about' speed='3500' />
             <div className='textSize1 gap10'>
-              <strong>Dilo Sá</strong>
+              <strong>Dilo Sá </strong>
               <GetText file='about-04' />
               <br />
               <br />
@@ -80,7 +80,7 @@ class About extends Component {
           <div className='normal flexRow textSize0  gap40 indent20 textJustify'>
             <SlideShow slides={this.state.dilo} path='about' speed='3500' />
             <div className='textSize1 gap10'>
-              <strong>Dilo Sá</strong>
+              <strong>Dilo Sá </strong>
               <GetText file='about-04' />
               <br />
               <br />

@@ -6,6 +6,7 @@ import About from './Components/About';
 import Home from './Components/Home';
 import Services from './Components/Services';
 import Partners from './Components/Partners';
+import Ambassadors from './Components/Ambassadors';
 import Contact from './Components/Contact';
 import Ethics from './Components/Ethics';
 import NoRoute from './Components/NoRoute';
@@ -24,9 +25,10 @@ class App extends Component {
         <section className='fullHeight flexColumn w100'>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/about' component={About} />
+            <Route exact path='/leadership' component={About} />
             <Route exact path='/services' component={Services} />
             <Route exact path='/partners' component={Partners} />
+            <Route exact path='/ambassadors' component={Ambassadors} />
             <Route exact path='/ethics' component={Ethics} />
             <Route exact path='/contact' component={Contact} />
             <Route path='*' component={NoRoute} />

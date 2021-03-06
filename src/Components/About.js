@@ -74,7 +74,6 @@ class About extends Component {
               <br />
               <GetText file='about-06' />
             </div>
-            <NavToTop />
           </div>
 
           <div className='normal flexRow textSize0  gap10 indent20 textJustify'>

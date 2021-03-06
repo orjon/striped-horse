@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import SectionTitle from './SectionTitle';
 import AmbassadorCard from './AmbassadorCard';
-import NavToTop from './Nav/NavToTop';
+// import NavToTop from './Nav/NavToTop';
 import GetText from '../Helpers/GetText';
 import '../styles/Ambassadors.scss';
 

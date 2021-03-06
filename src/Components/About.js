@@ -62,7 +62,7 @@ class About extends Component {
 
           {/* <SectionSubTitle title='Dilo Sá' /> */}
 
-          <div className='small flexColumn center gap40 indent20 textJustify'>
+          <div className='small flexColumn center gap20 indent20 textJustify'>
             <SlideShow slides={this.state.dilo} path='about' speed='3500' />
             <div className='textSize1 gap10'>
               <strong>Dilo Sá </strong>
@@ -77,7 +77,7 @@ class About extends Component {
             <NavToTop />
           </div>
 
-          <div className='normal flexRow textSize0  gap40 indent20 textJustify'>
+          <div className='normal flexRow textSize0  gap10 indent20 textJustify'>
             <SlideShow slides={this.state.dilo} path='about' speed='3500' />
             <div className='textSize1 gap10'>
               <strong>Dilo Sá </strong>
@@ -89,9 +89,9 @@ class About extends Component {
               <br />
               <GetText file='about-06' />
             </div>
-            <NavToTop />
           </div>
         </div>
+        <NavToTop />
       </div>
     );
   }

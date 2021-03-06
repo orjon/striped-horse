@@ -1,94 +1,84 @@
 import React, { Component } from 'react';
-import PartnerCard  from './PartnerCard';
+import PartnerCard from './PartnerCard';
 import SectionTitle from './SectionTitle';
+import NavToTop from './Nav/NavToTop';
 import GetText from '../Helpers/GetText';
 
 import '../styles/Partners.scss';
 
 class Partners extends Component {
-
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
-  
-  render(){
 
-
-    return(
+  render() {
+    return (
       <div className='Partners'>
-
         <SectionTitle title='Our Partners' />
 
         <div className='sectionContent'>
-
           <div className='flexColumn textBlock indent20'>
             <div className='textSize1 textJustify'>
-              <GetText file='partner-01'/>
+              <GetText file='partner-01' />
             </div>
-          </div> 
+          </div>
 
           <div className='flexRow flexWrap'>
-
             <PartnerCard
               link='http://www.emgs.com/'
               image='partners/EMGS.png'
-              title={<GetText file='partner-emgsTitle'/>}
-              text={<GetText file='partner-emgs'/>}
+              title={<GetText file='partner-emgsTitle' />}
+              text={<GetText file='partner-emgs' />}
             />
 
             <PartnerCard
               // link='http://www.emgs.com/'
               image='partners/Geode.jpg'
-              title={<GetText file='partner-geodeTitle'/>}
-              text={<GetText file='partner-geode'/>}
+              title={<GetText file='partner-geodeTitle' />}
+              text={<GetText file='partner-geode' />}
             />
 
             <PartnerCard
               link='http://www.nventures.co.uk/'
               image='partners/NVentures.jpg'
-              title={<GetText file='partner-nventuresTitle'/>}
-              text={<GetText file='partner-nventures'/>}
+              title={<GetText file='partner-nventuresTitle' />}
+              text={<GetText file='partner-nventures' />}
             />
 
             <PartnerCard
               link='https://promote-energy.com/'
               image='partners/PromoteEnergy.jpg'
-              title={<GetText file='partner-promoteEnergyTitle'/>}
-              text={<GetText file='partner-promoteEnergy'/>}
+              title={<GetText file='partner-promoteEnergyTitle' />}
+              text={<GetText file='partner-promoteEnergy' />}
             />
 
             <PartnerCard
               link='http://www.pveconsulting.co.uk/'
               image='partners/PVE.png'
-              title={<GetText file='partner-pveConsultingTitle'/>}
-              text={<GetText file='partner-pveConsulting'/>}
+              title={<GetText file='partner-pveConsultingTitle' />}
+              text={<GetText file='partner-pveConsulting' />}
             />
 
             <PartnerCard
               link='https://www.rbs.com.na'
               image='partners/Risk-BasedSolutions.jpg'
-              title={<GetText file='partner-rbsTitle'/>}
-              text={<GetText file='partner-rbs'/>}
+              title={<GetText file='partner-rbsTitle' />}
+              text={<GetText file='partner-rbs' />}
             />
 
             <PartnerCard
               link='https://www.tsavooilfieldservices.com'
               image='partners/Tsavo.png'
-              title={<GetText file='partner-tsavoTitle'/>}
-              text={<GetText file='partner-tsavo'/>}
+              title={<GetText file='partner-tsavoTitle' />}
+              text={<GetText file='partner-tsavo' />}
             />
-            
           </div>
-
         </div>
 
+        <NavToTop />
       </div>
-    )
+    );
   }
 }
 
 export default Partners;
-
-
-
-

@@ -3,21 +3,21 @@
 
 section {
   border: $devBorder solid lime;
-  
-  margin-top: $navHeight;
-  width :100%;
 
+  margin-top: $navHeight;
+  width: 100%;
 
   .sectionContent {
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 0px;
 
     @media only screen and (min-width: $breakPoint1) {
       padding-left: 20px;
       padding-right: 20px;
+      margin-bottom: -20px;
     }
   }
-
 
   .textBanner {
     color: $colorBannerText;
@@ -30,23 +30,22 @@ section {
     font-size: 30pt;
   }
 
-
-  .textBanner, .textBlock {
+  .textBanner,
+  .textBlock {
     &.overlayWhite {
       color: white;
       text-shadow: 0px 0px $textShadowBlur $textShadowColor;
     }
   }
 
-
-  .imageHero{ 
+  .imageHero {
     background: url('../images/home/heroImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  // .image01{ 
+  // .image01{
   //   background: linear-gradient(rgba(0, 0, 0, $imageDarken), rgba(0, 0, 0, $imageDarken)),  url('../images/home/TableMountain.jpg');
   //   background: linear-gradient(rgba(255, 255, 255, $imageLighten), rgba(255, 255, 255, $imageLighten)),  url('../images/home/TableMountain.jpg');
   //   background-repeat: no-repeat;
@@ -54,6 +53,3 @@ section {
   //   background-position: center;
   // }
 }
-
-
-

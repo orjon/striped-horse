@@ -16,7 +16,7 @@ class About extends Component {
         'CharlesThomas03',
         'CharlesThomas04',
       ],
-      dilo: ['Dilo01'],
+      dilo: ['Dilo01', 'Dilo02', 'Dilo03', 'Dilo04'],
     };
   }
 
@@ -33,7 +33,11 @@ class About extends Component {
           {/* <SectionSubTitle title='Charles Thomas' /> */}
 
           <div className='small flexColumn center indent20 textJustify'>
-            <SlideShow slides={this.state.charles} path='about' speed='3500' />
+            <SlideShow
+              slideArray={this.state.charles}
+              path='about'
+              speed='3500'
+            />
             <div className='textSize1 gap10'>
               <strong>Charles Thomas </strong>
               <GetText file='about-01' />
@@ -47,7 +51,11 @@ class About extends Component {
           </div>
 
           <div className='normal flexRow textSize0 indent20 textJustify'>
-            <SlideShow slides={this.state.charles} path='about' speed='3500' />
+            <SlideShow
+              slideArray={this.state.charles}
+              path='about'
+              speed='3500'
+            />
             <div className='textSize1 gap10'>
               <strong>Charles Thomas </strong>
               <GetText file='about-01' />
@@ -63,7 +71,7 @@ class About extends Component {
           {/* <SectionSubTitle title='Dilo Sá' /> */}
 
           <div className='small flexColumn center gap20 indent20 textJustify'>
-            <SlideShow slides={this.state.dilo} path='about' speed='3500' />
+            <SlideShow slideArray={this.state.dilo} path='about' speed='3500' />
             <div className='textSize1 gap10'>
               <strong>Dilo Sá </strong>
               <GetText file='about-04' />
@@ -77,7 +85,7 @@ class About extends Component {
           </div>
 
           <div className='normal flexRow textSize0  gap10 indent20 textJustify'>
-            <SlideShow slides={this.state.dilo} path='about' speed='3500' />
+            <SlideShow slideArray={this.state.dilo} path='about' speed='3500' />
             <div className='textSize1 gap10'>
               <strong>Dilo Sá </strong>
               <GetText file='about-04' />

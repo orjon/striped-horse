@@ -1,50 +1,49 @@
-import React, { Component } from 'react';
+import React, { useRef } from 'react';
 import { Fade } from 'react-slideshow-image';
 import '../styles/SlideShow.scss';
- 
 
-class SlideShow extends Component{
+const SlideShow = ({ slideArray, path, speed }) => {
+  let slideShow = useRef();
+  let slideFiles = slideArray;
+  console.log('slides');
 
-  render(){
+  const fadeProperties = {
+    duration: speed,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: false,
+    arrows: false,
+    // Callback on Change:
+    // onChange: (oldIndex, newIndex) => {
+    //   console.log(`fade transition from ${oldIndex} to ${newIndex}`);
+    // }
+  };
 
-    let slideFiles = this.props.slides
-    let { speed, path } = this.props
- 
-    const fadeProperties = {
-      duration: speed,
-      transitionDuration: 500,
-      infinite: true,
-      indicators: false,
-      arrows: false
-      // Callback on Change:
-      // onChange: (oldIndex, newIndex) => {
-      //   console.log(`fade transition from ${oldIndex} to ${newIndex}`);
-      // }
-    }
-
-    let slides = slideFiles.map(image => {
-      const imagePath = require(`../images/${path}/${image}.jpg`)
-      return <div key={image} className='each-fade'>
+  let slides = undefined;
+  if (slideFiles) {
+    slides = slideFiles.map((image) => {
+      const imagePath = require(`../images/${path}/${image}.jpg`);
+      return (
+        <div key={image} className='each-fade'>
           <div className='image-container'>
-            <img className='slide show' src={imagePath} alt=''/>
+            <img className='slide show' src={imagePath} alt='' />
           </div>
-      </div>
-      })
-
-
-    return (
-      <div className='slide-container'>
-        <Fade {...fadeProperties}>
-          {slides}
-        </Fade>
-      </div>
-    )
+        </div>
+      );
+    });
   }
 
-
-}
+  return (
+    <div className='slide-container'>
+      {slides && (
+        <Fade ref={slideShow} {...fadeProperties}>
+          {slides}
+        </Fade>
+      )}
+    </div>
+  );
+};
 
 export default SlideShow;
 
 // https://www.npmjs.com/package/react-slideshow-image
-

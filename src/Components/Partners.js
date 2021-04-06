@@ -67,6 +67,13 @@ class Partners extends Component {
             />
 
             <PartnerCard
+              link='http://www.rockwash.co.uk/'
+              image='partners/Rockwash.png'
+              title={<GetText file='partner-rockwashTitle' />}
+              text={<GetText file='partner-rockwash' />}
+            />
+
+            <PartnerCard
               link='https://www.tsavooilfieldservices.com'
               image='partners/Tsavo.png'
               title={<GetText file='partner-tsavoTitle' />}
